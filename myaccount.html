@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
    
    
-    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="myaccount.css">
 
 
     <!-- importation font family "Anton"-->
@@ -46,7 +46,7 @@
             <div class="inscription">
                 <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
                 <div class="text1">
-                <h1>MON ESPACE</h1>
+                    <h1>MON ESPACE</h1>
                 </div>
             </div>
         <div class="champ_modif">   
