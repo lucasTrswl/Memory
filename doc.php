@@ -36,10 +36,6 @@
     <nav>
 <<<<<<< HEAD
         <p class="power"><a href="doc.html" class="connexion"> The power of memory</a></p>
-        <p class = "pad"><a href="jeu.html" class="connexion"> JEU</a></p>
-=======
-        <p class="power"><a href="doc.html" class="connexion"> The power of Memory</a></p>
->>>>>>> c0faa3f3e7e06b5372db4317d2b6891dc840e97c
         <p><a href="scores.html" class="connexion"> SCORES</a></p>
         <p><a href="inscription.html" class = "connexion"> INSCRIPTION </a></p>
         <p><a href="connexion.html"  class="connexion"> CONNEXION</a></p>
