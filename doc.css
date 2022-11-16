@@ -71,10 +71,8 @@ nav
 .Bienvenue
 {
     text-align: center;
-    margin-top : 150px;
     color: white;
     font-size: 70px;
-    padding-top: 20px;
     font-family: 'Anton', sans-serif;;
 }
 
@@ -361,6 +359,30 @@ button
     border-radius: 50%;
     height: 150px;
     width: 150px;
+}
+
+.card4
+{
+    text-align: center;
+    background-color: #01011e;
+    padding: 40px;
+    border-radius: 5px;
+    font-family: 'Archivo', sans-serif;
+}
+
+#per4
+{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+#Calque_3
+{
+    display: center;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .container

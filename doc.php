@@ -15,7 +15,7 @@ require('./view/header.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="doc.css">
 
 
     <!-- importation font family "Anton"-->
@@ -89,13 +89,13 @@ require('./view/header.inc.php');
 <div class="equipe">
     <h1><strong>Notre équipe</strong></h1>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam?</p>
-     <img src="Images/Logo/fleur-de-lys.jpeg" alt = "img5" id="fleur">
+     <svg id="Calque_3" data-name="Calque 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.89 32.44"><defs><style>.cls-1{fill:#d5aa6f;}</style></defs><path class="cls-1" d="M128.66,8.44c0,2.17-1.53,3.83-5.59,3.83,0,0,.26-4.38-.63-4.38s-.63,4.38-.63,4.38c-4.06,0-5.59-1.66-5.59-3.83S122.44,0,122.44,0,128.66,6.27,128.66,8.44Z"/><path class="cls-1" d="M118.48,16.85c0,4-1.66,5.59-3.83,5.59s-8.45-6.22-8.45-6.22S112.48,10,114.65,10s3.83,1.53,3.83,5.59c0,0-4.39-.26-4.39.63S118.48,16.85,118.48,16.85Z"/><path class="cls-1" d="M99.75,19c-2,0-57.59-1.71-84.9-2.56C12.28,16.35,2,16.28,0,16.22c2-.06,12.19-.13,14.7-.21,27.25-.84,83.06-2.57,85.05-2.57,0,0-3.73,1.56-3.73,2.78S99.75,19,99.75,19Z"/><path class="cls-1" d="M138.68,16.22s-6.28,6.22-8.45,6.22-3.83-1.54-3.83-5.59c0,0,4.39.25,4.39-.63s-4.39-.63-4.39-.63c0-4.06,1.67-5.59,3.83-5.59S138.68,16.22,138.68,16.22Z"/><path class="cls-1" d="M244.89,16.24c-1.81.05-11.21.12-13.54.19a.48.48,0,0,1-.12,0c-26.84.84-84.08,2.61-86.09,2.61,0,0,3.72-1.56,3.72-2.78v0c0-1.22-3.72-2.78-3.72-2.78,2,0,59.25,1.77,86.09,2.61h.12C233.68,16.12,243.08,16.19,244.89,16.24Z"/><path class="cls-1" d="M128.66,24c0,2.17-6.22,8.45-6.22,8.45s-6.22-6.28-6.22-8.45,1.53-3.83,5.59-3.83c0,0-.26,4.39.63,4.39s.63-4.39.63-4.39C127.13,20.16,128.66,21.83,128.66,24Z"/></svg>
 </div>
 
 <section class="section4">
     <div class="card1">
-        <img src="Images/Perso/perso1.webp" id="per1">
-        <h2>HAMILTON</h2>
+        <img src="Images/Perso/lucas.png" id="per1">
+        <h2>LUCAS</h2>
         <p>Game Designer</p>
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
@@ -104,22 +104,34 @@ require('./view/header.inc.php');
     </div>
     
     <div class ="card2">
-        <img src="Images/Perso/perso2.webp" id="per2">
-        <h2>MICKAEL</h2>
+        <img src="Images/Perso/ethan.png" id="per2">
+        <h2>ETHAN</h2>
         <p>Game Designer</p>
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+     
+    <div class="card3">
+        <img src="Images/Perso/florent.png" id="per3">
+        <h2>FLORENT</h2>
+        <p>Game Designer</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
     </div>
     
-    <div class="card3">
-    <img src="Images/Perso/perso3.webp" id="per3">
-    <h2>ARNOLD</h2>
-    <p>Game Designer</p>
-    <i class="fa-brands fa-facebook-f"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-pinterest"></i>
-</div>       
+    <div class="card4">
+        <img src="Images/Perso/mael.png" id="per3">
+        <h2>MAËL</h2>
+        <p>Game Designer</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>       
 </section>
 
 <?php 
