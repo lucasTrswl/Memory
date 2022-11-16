@@ -3,8 +3,26 @@ require('./includes/database.inc.php');
 
 //importation header
 require('./view/header.inc.php');
-?>
 
+  // Valider l'email
+
+
+  $email = $_POST['email'];
+
+
+  if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+
+
+
+
+    echo "$email est une adresse e-mail  valide";
+
+    
+  }else{
+    echo  "$email est une adresse e-mail pas valide";
+  }
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -49,25 +67,24 @@ require('./view/header.inc.php');
             </div>
         <div class="champ_modif">   
             <div class="formInscription">
-                <form>
-                    <label for="email">
-                    <input type="email" id="email" placeholder="Ancien email" class="formInscription1">
-                    </label>
-    
-                </form>
+                <form method="POST">
+                    
 
-                <form>
-                    <label for="confirm_e">
-                        <input type="text" id="confirm_e" placeholder="Nouvel email" class="formInscription2">
-                    </label>
-                </form>
+                
+                    <input type="email" name = "email" id="email" placeholder="Ancien email" class="formInscription1">
+
+
+                    
+    
+
+                    <label for="confirm_e"></label>
+                        <input type="text"  id="confirm_e" placeholder="Nouvel email" class="formInscription2">
+                    
+                
                 
     
-                <form>
-                    <label for="password">
+                    <label for="password"></label>
                         <input type="password" id="password" placeholder="Mot de passe"  class="formInscription3">
-                    </label>
-                </form>
     
                 <form>
                     <label for="password_conf">
