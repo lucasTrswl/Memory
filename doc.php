@@ -49,7 +49,7 @@
     <p class = "Bienvenue1">Venez challenger les cerveaux les plus agiles!</p>
 
 <div class = button>
-    <button class="jouer">JOUER!</button>
+<a href="jeu.php"><button class="jouer">JOUER!</button></a>
 </div>
 </section>
 </div>
