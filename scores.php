@@ -1,3 +1,11 @@
+<?php
+require('./includes/database.inc.php');
+
+//importation header
+require('./view/header.inc.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -31,17 +39,7 @@
 
 <body>
 <body class = "body2">
-<header>
-    <nav>
-        <p class="power"><a href="doc.html" class="connexion"> The power of memory</a></p>
-        <p class = "pad"><a href="jeu.html" class="connexion"> JEU</a></p>
-        <p><a href="scores.html" class="connexion"> SCORES</a></p>
-        <p><a href="inscription.html" class = "connexion"> INSCRIPTION </a></p>
-        <p><a href="connexion.html"  class="connexion"> CONNEXION</a></p>
-        <p><a href="myaccount.html" class="connexion"> MON ESPACE </a></p>
-        <p class="pad1"><a href="contact.html" class="connexion">NOUS CONTACTER</a></p>    
-    </nav>
-</header>
+
 
 <div class="inscription">
     <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
