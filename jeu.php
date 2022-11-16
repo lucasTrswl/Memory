@@ -79,7 +79,7 @@ require('./view/header.inc.php');
         <input type="text" id="message" placeholder="Votre message...">
     </label>    
 </form>
-<button type="submit" id="envoyer">Envoyer</button>
+<button type="submit" id="envoyer">rEnvoyer</button>
 </div>
 
 
