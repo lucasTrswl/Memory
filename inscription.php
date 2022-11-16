@@ -56,19 +56,12 @@ require('./view/header.inc.php');
     <label for="email">
         <input type="email" id="email" placeholder="Email" class="formInscription1">
     </label>
-</form>
-<form>
     <label for="pseudo">
         <input type="text" id="pseudo" placeholder="Pseudo" class="formInscription2">
     </label>
-</form>
-<form>
     <label for="password">
         <input type="password" id="password" placeholder="Mot de passe"  class="formInscription3">
     </label>
-</form>
-        
-<form>
     <label for="password">
         <input type="password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
     </label>
