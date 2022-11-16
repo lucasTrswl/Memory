@@ -1,3 +1,11 @@
+<?php
+require('./includes/database.inc.php');
+
+//importation header
+require('./view/header.inc.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -32,17 +40,7 @@
     <title>Myaccount</title>
 </head>
 <body class = "body2">
-        <header>
-            <nav>
-                <p class="power"><a href="doc.php" class="connexion"> The power of memory</a></p>
-                <p class = "pad"><a href="jeu.php" class="connexion"> JEU</a></p>
-                <p><a href="scores.php" class="connexion"> SCORES</a></p>
-                <p><a href="inscription.php" class = "connexion"> INSCRIPTION </a></p>
-                <p><a href="connexion.php"  class="connexion"> CONNEXION</a></p>
-                <p><a href="myaccount.php" class="connexion"> MON ESPACE </a></p>
-                <p class="pad1"><a href="contact.php" class="connexion">NOUS CONTACTER</a></p>
-                </nav>
-            </header>
+        
             <div class="inscription">
                 <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
                 <div class="text1">
@@ -101,41 +99,12 @@
             </div>
         </div>
     </body>
-    <footer>
+    <?php 
 
-    <div class="footer1">
-    <h1>Informations</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dolore!</p>
+ // importation footer
+ require('./view/footer.inc.php');
 
-    <p><div class="orange"> Tél: </div> 0605040302 </p>
-    <p> <div class="orange"> Mail: </div> support@powerofmemory.com</p>
-    <p><div class="orange">Location : </div> Paris</p>
-
-    <div class="icones">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-instagram"></i>
-    </div>
-
-    <p class="copyright">Copyright © 2022 Tous droits réservés</p>
-
-    </div>
-
-    <div class="footer2">
-    <h1>Power Of Memory</h1>
-    <ul>
-        <li>Jouer!</li>
-        <li>Les scores</li>
-        <li>Nous contacter</li>
-    </ul>
-
-
-    </div>
-
-
-</footer>
+ ?>
 
 
 </body>
