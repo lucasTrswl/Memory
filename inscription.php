@@ -1,6 +1,6 @@
 <?php
 require('./includes/database.inc.php');
-if(isset($_POST[]))
+if(isset($_POST["email"]))
 ?>
 
 
