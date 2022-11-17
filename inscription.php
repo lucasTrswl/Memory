@@ -1,5 +1,6 @@
 <?php
 require('./includes/database.inc.php');
+if(isset($_POST[]))
 ?>
 
 
@@ -54,19 +55,19 @@ require('./view/header.inc.php');
 <div class="formInscription">
 <form method="POST" action="">
     <label for="email">
-        <input type="email" id="email" placeholder="Email" class="formInscription1">
+        <input type="email" id="email" placeholder="Email" name="email" class="formInscription1">
     </label>
 
     <label for="pseudo">
-        <input type="text" id="pseudo" placeholder="Pseudo" class="formInscription2">
+        <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo" class="formInscription2">
     </label>
 
     <label for="password">
-        <input type="password" id="password" placeholder="Mot de passe"  class="formInscription3">
+        <input type="password" id="password" placeholder="Mot de passe" name="mdp"  class="formInscription3">
     </label>
 
     <label for="password">
-        <input type="password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
+        <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  class="formInscription3">
     </label>
 </form>
 </div>
