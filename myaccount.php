@@ -1,27 +1,13 @@
 <?php
 require('./includes/database.inc.php');
 
-//importation header
-require('./view/header.inc.php');
-
-  // Valider l'email
-
-
-  $email = $_POST['email'];
-
-
-  if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-
-
-
-
+// Valider l'email
+$email = $_POST['email'];
+if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     echo "$email est une adresse e-mail  valide";
-
-    
-  }else{
+}else{
     echo  "$email est une adresse e-mail pas valide";
-  }
-
+}
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +44,11 @@ require('./view/header.inc.php');
     <title>Myaccount</title>
 </head>
 <body class = "body2">
-        
+<?php
+//importation header
+require('./view/header.inc.php');
+?>
+
             <div class="inscription">
                 <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
                 <div class="text1">

@@ -1,12 +1,8 @@
 <?php
-
 require('./includes/database.inc.php');
-
-//importation header
-require('./view/header.inc.php');
-
-
 ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -40,6 +36,10 @@ require('./view/header.inc.php');
 
 <body>
 <body class = "body2">
+<?php
+//importation header
+require('./view/header.inc.php');
+?>
 
 
 <div class="inscription">
