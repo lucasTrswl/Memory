@@ -1,9 +1,21 @@
 <?php
 require('./includes/database.inc.php');
+session_start();
+$bdd=new PDO('mysql:host=localhost;dbname=doc;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])){
-
-    }else{
+        if($_POST["mdp"]==$_POST["confirm_mdp"]){
+            $email=htmlspecialchars($_POST["email"]);
+            $pseudo=htmlspecialchars($_POST["pseudo"]);
+            $mdp=sha1($_POST["mdp"]);
+            $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
+            $insertUser->execute(array($email,$mdp,$pseudo));
+        }
+        else{
+            echo "Veuillez répéter le mot de passe à confirmer";
+        }  
+    }
+    else{
         echo "Veuillez remplir tous les champs";
     }
 }
@@ -61,19 +73,19 @@ require('./view/header.inc.php');
 <div class="formInscription">
 <form method="POST" action="">
     <label for="email">
-        <input type="email" id="email" placeholder="Email" name="email" class="formInscription1">
+        <input type="email" id="email" placeholder="Email" name="email" autocomplete="off" class="formInscription1">
     </label>
 
     <label for="pseudo">
-        <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo" class="formInscription2">
+        <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo" autocomplete="off" class="formInscription2">
     </label>
 
     <label for="password">
-        <input type="password" id="password" placeholder="Mot de passe" name="mdp"  class="formInscription3">
+        <input type="password" id="password" placeholder="Mot de passe" name="mdp" autocomplete="off"  class="formInscription3">
     </label>
 
     <label for="password">
-        <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  class="formInscription3">
+        <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
 </form>
