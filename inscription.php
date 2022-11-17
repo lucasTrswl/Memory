@@ -5,11 +5,16 @@ $bdd=new PDO('mysql:host=localhost;dbname=doc;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])){
         if($_POST["mdp"]==$_POST["confirm_mdp"]){
-            $email=htmlspecialchars($_POST["email"]);
-            $pseudo=htmlspecialchars($_POST["pseudo"]);
-            $mdp=sha1($_POST["mdp"]);
-            $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
-            $insertUser->execute(array($email,$mdp,$pseudo));
+            if(strlen($_POST['pseudo'])>4){
+                $email=htmlspecialchars($_POST["email"]);
+                $pseudo=htmlspecialchars($_POST["pseudo"]);
+                $mdp=sha1($_POST["mdp"]);
+                $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
+                $insertUser->execute(array($email,$mdp,$pseudo));
+            }
+            else{
+                echo "Le nom d'utilisateur doit contenir au minimum 4 caractères";
+            }
         }
         else{
             echo "Veuillez répéter le mot de passe à confirmer";
