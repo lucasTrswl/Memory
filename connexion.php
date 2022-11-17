@@ -67,10 +67,8 @@ require('./view/header.inc.php');
 
 
  <?php 
-
  // importation footer
  require('./view/footer.inc.php');
-
  ?>
 </body>
 </html>
