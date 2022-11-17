@@ -591,6 +591,8 @@ form{
 
 .buttonInscription
 {
+    background-color: orange;
+    border-radius: 5px;
     margin-left: 510px;
     padding:10px;
     margin-top: 20px;
