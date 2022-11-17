@@ -75,9 +75,9 @@ require('./view/header.inc.php');
     <label for="password">
         <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  class="formInscription3">
     </label>
+    <input type="submit" class="buttonInscription" name="inscription">
 </form>
 </div>
-    <input type="submit" class="buttonInscription" name="inscription">
 </section>
 
 <?php 
