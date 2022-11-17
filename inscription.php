@@ -95,6 +95,7 @@ if(isset($_POST["inscription"])){
     else{
         echo "Veuillez remplir tous les champs";
     }
+}
 ?>
 </div>
 </section>
