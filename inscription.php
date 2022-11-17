@@ -70,7 +70,7 @@ require('./view/header.inc.php');
     </label>
 </form>
 </div>
-    <input type="submit" class="buttonInscription">Inscription</input>
+    <button type="submit" class="buttonInscription">Inscription</button>
 </section>
 
 <?php 
