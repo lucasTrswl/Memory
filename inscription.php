@@ -88,7 +88,7 @@ if(isset($_POST["inscription"])){
             echo "Veuillez remplir tous les champs";
         }
         elseif($_POST['mdp']!=$_POST['confirm_mdp']){
-        echo "Veuillez répéter le mot de passe à confirmer";
+            echo "Veuillez répéter le mot de passe à confirmer";
         }
         elseif(strlen($_POST['pseudo']<=4)){
             echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
