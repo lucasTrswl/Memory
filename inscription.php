@@ -52,7 +52,7 @@ require('./view/header.inc.php');
            
 <section>
 <div class="formInscription">
-<form>
+<form method="POST">
     <label for="email">
         <input type="email" id="email" placeholder="Email" class="formInscription1">
     </label>
