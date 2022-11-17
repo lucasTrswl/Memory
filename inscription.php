@@ -84,7 +84,10 @@ if(isset($_POST["inscription"])){
                 $insertUser->execute(array($email,$mdp,$pseudo));
     }
     else{
-        if($_POST['mdp']!=$_POST['confirm_mdp']){
+        if(empty($_POST["email"])AND empty($_POST["pseudo"])AND empty($_POST["mdp"])AND empty($_POST["confirm_mdp"])){
+            echo "Veuillez remplir tous les champs";
+        }
+        elseif($_POST['mdp']!=$_POST['confirm_mdp']){
         echo "Veuillez répéter le mot de passe à confirmer";
         }
         elseif(strlen($_POST['pseudo']<=4)){
@@ -92,9 +95,6 @@ if(isset($_POST["inscription"])){
         }
         elseif(strlen($_POST['mdp']<=8)){
             echo "Le mot de passe doit contenir au moins 8 caractères";
-        }
-        else{
-            echo "Veuillez remplir tous les champs";
         }
     }
 }
