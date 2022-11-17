@@ -1,29 +1,6 @@
 <?php
 require('./includes/database.inc.php');
-session_start();
-$bdd=new PDO('mysql:host=localhost;dbname=doc;charset=utf8;','root','root');
-if(isset($_POST["inscription"])){
-    if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])){
-        if($_POST["mdp"]==$_POST["confirm_mdp"]){
-            if(strlen($_POST['pseudo'])>4){
-                $email=htmlspecialchars($_POST["email"]);
-                $pseudo=htmlspecialchars($_POST["pseudo"]);
-                $mdp=sha1($_POST["mdp"]);
-                $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
-                $insertUser->execute(array($email,$mdp,$pseudo));
-            }
-            else{
-                echo "Le nom d'utilisateur doit contenir au minimum 4 caractères";
-            }
-        }
-        else{
-            echo "Veuillez répéter le mot de passe à confirmer";
-        }  
-    }
-    else{
-        echo "Veuillez remplir tous les champs";
-    }
-}
+
 ?>
 
 
@@ -94,6 +71,31 @@ require('./view/header.inc.php');
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
 </form>
+<?php
+session_start();
+$bdd=new PDO('mysql:host=localhost;dbname=doc;charset=utf8;','root','root');
+if(isset($_POST["inscription"])){
+    if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
+    $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)){
+                $email=htmlspecialchars($_POST["email"]);
+                $pseudo=htmlspecialchars($_POST["pseudo"]);
+                $mdp=sha1($_POST["mdp"]);
+                $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
+                $insertUser->execute(array($email,$mdp,$pseudo));
+    }
+    elseif($_POST['mdp']!=$_POST['confirm_mdp']){
+        echo "Veuillez répéter le mot de passe à confirmer";
+    }
+    elseif(strlen($_POST['pseudo']<=4)){
+        echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
+    }
+    elseif(strlen($_POST['mdp']<=8)){
+        echo "Le mot de passe doit contenir au moins 8 caractères";
+    }
+    else{
+        echo "Veuillez remplir tous les champs";
+    }
+?>
 </div>
 </section>
 
