@@ -48,7 +48,7 @@ require('./view/header.inc.php');
     <p class = "Bienvenue1">Venez challenger les cerveaux les plus agiles!</p>
 
 <div class = button>
-    <button class="jouer">JOUER!</button>
+    <button class="jouer" onclick="window.location.href = 'jeu.php';">JOUER</button>
 </div>
 </section>
 </div>
