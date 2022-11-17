@@ -4,7 +4,7 @@ if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])){
 
     }else{
-        echo "Veuillez remplir tous les champs"
+        echo "Veuillez remplir tous les champs";
     }
 }
 ?>
