@@ -29,17 +29,37 @@ if(isset($_POST['Valider'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="messagerie.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+
+
     <form method="POST" action="">
-        <input type ="text" name="pseudo">
+
+    
+        <label for="pseudo">Pseudo</label><br>
+        <input type ="text" name="pseudo" placeholder="Pseudo">
         <br><br>
+
+        <label for="message">Message</label>
+        <br>
         <textarea name="message"></textarea>
         <br>
         <input type="submit" name="Valider">
+        
     </form>
 
 
+
     <section id="messages"></section>
+
+    <script>
+        setInterval('afficher_messages()', 500);
+        function afficher_messages(){
+            $('#messages').load('afficher_messages.php');
+        }
+    </script>
 </body>
 </html>
