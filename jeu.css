@@ -386,6 +386,19 @@ footer{
     padding-left: 400px;
 }
 
+.footer2 ul
+{
+    list-style: none;
+}
+
+.footer2 li::before 
+{
+    content: "▀";
+    color: orange;
+    display: inline-block;
+    width: 20px;
+}
+
 .orange
 {
     color: orange;

@@ -1,8 +1,5 @@
 <?php
 require('./includes/database.inc.php');
-
-//importation header
-require('./view/header.inc.php');
 ?>
 
 
@@ -40,10 +37,14 @@ require('./view/header.inc.php');
 <body>
 <body class = "body2">
 <div class = "fond">
+<?php
+//importation header
+require('./view/header.inc.php');
+?>
 
 
 <section>
-    <h1 class = "Bienvenue">BIENVENUE DANS <br> NOTRE STUDIO!</h1>
+    <h1 class = "Bienvenue">BIENVENUE DANS <br> NOTRE STUDIO !</h1>
     <p class = "Bienvenue1">Venez challenger les cerveaux les plus agiles!</p>
 
 <div class = button>
@@ -94,7 +95,7 @@ require('./view/header.inc.php');
 
 <section class="section4">
     <div class="card1">
-        <img src="Images/Perso/lucas.png" id="per1">
+        <img src="Images/Perso/lucas.jpeg" id="per1">
         <h2>LUCAS</h2>
         <p>Game Designer</p>
         <i class="fa-brands fa-facebook-f"></i>

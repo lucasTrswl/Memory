@@ -25,7 +25,7 @@ nav
     color : white;
     width: 100%;
     font-family: 'Anton', sans-serif;
-    align-items: baseline; 
+    align-items: baseline;
 }
 
 .connexion
@@ -66,6 +66,7 @@ nav
     background-size: cover;
     height: 800px;
     width: 100%;
+    padding-bottom: 200px;
 }
 
 .Bienvenue
@@ -74,6 +75,7 @@ nav
     color: white;
     font-size: 70px;
     font-family: 'Anton', sans-serif;;
+    padding-top: 100px;
 }
 
 .pad
@@ -98,6 +100,7 @@ nav
 {
     text-align: center;
     font-family: 'Anton', sans-serif;
+    padding-top: 30px;
 }
 
 .jouer
@@ -309,7 +312,7 @@ button
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 100px;
 }
 
@@ -320,6 +323,12 @@ button
     padding: 40px;
     border-radius: 5px;
     font-family: 'Archivo', sans-serif;
+}
+
+.card1:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 #per1
@@ -338,6 +347,12 @@ button
     font-family: 'Archivo', sans-serif;
 }
 
+.card2:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 #per2
 {
     border-radius: 50%;
@@ -352,6 +367,13 @@ button
     padding: 40px;
     border-radius: 5px;
     font-family: 'Archivo', sans-serif;
+    overflow: hidden;
+}
+
+.card3:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 #per3
@@ -368,6 +390,13 @@ button
     padding: 40px;
     border-radius: 5px;
     font-family: 'Archivo', sans-serif;
+}
+
+.card4:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+
 }
 
 #per4
@@ -406,6 +435,19 @@ footer{
 .footer2
 {
     padding-left: 400px;
+}
+
+.footer2 ul
+{
+    list-style: none;
+}
+
+.footer2 li::before 
+{
+    content: "▀";
+    color: orange;
+    display: inline-block;
+    width: 20px;
 }
 
 .orange
