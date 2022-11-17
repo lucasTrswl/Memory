@@ -83,17 +83,19 @@ if(isset($_POST["inscription"])){
                 $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
                 $insertUser->execute(array($email,$mdp,$pseudo));
     }
-    elseif($_POST['mdp']!=$_POST['confirm_mdp']){
-        echo "Veuillez répéter le mot de passe à confirmer";
-    }
-    elseif(strlen($_POST['pseudo']<=4)){
-        echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
-    }
-    elseif(strlen($_POST['mdp']<=8)){
-        echo "Le mot de passe doit contenir au moins 8 caractères";
-    }
     else{
-        echo "Veuillez remplir tous les champs";
+        if($_POST['mdp']!=$_POST['confirm_mdp']){
+        echo "Veuillez répéter le mot de passe à confirmer";
+        }
+        elseif(strlen($_POST['pseudo']<=4)){
+            echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
+        }
+        elseif(strlen($_POST['mdp']<=8)){
+            echo "Le mot de passe doit contenir au moins 8 caractères";
+        }
+        else{
+            echo "Veuillez remplir tous les champs";
+        }
     }
 }
 ?>
