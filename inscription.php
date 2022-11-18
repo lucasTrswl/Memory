@@ -76,7 +76,7 @@ require('./view/header.inc.php');
 </form>
 <?php
 session_start();
-$bdd=new PDO('mysql:host=localhost;dbname=doc.sql, root, root');
+$bdd=new PDO('mysql:host=localhost;dbname=doc.sql; root; root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
     $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)AND
