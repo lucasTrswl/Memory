@@ -15,11 +15,11 @@ if(isset($_POST['submit'])){
 
        if($result->rowCount() > 0){
 
-            $data = $result->fetchAll();
-            if(password_verify($password, $data[0]["password"])){
+            $data = $result->fetch();
+            if(password_verify($password, $data["password"])){
 
-                echo "Connexion effectuée";
                 $_SESSION['username'] = $username;
+               // $_SESSION['email'] = $$data["email"];
 
                 header("Location: page_connexion.php");
             }

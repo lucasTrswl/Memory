@@ -1,6 +1,11 @@
 <?php
 require('../includes/database.inc.php');
 
+require('login_exec.php');
+
+require('../inscription.php');
+
+//require('../inscription.php');
 ?>
 
 
@@ -13,6 +18,8 @@ require('../includes/database.inc.php');
     <title>Document</title>
 </head>
 <body>
-    <h1>Profil de <?php echo $_POST['username'] ?>
+    <h1>Profil de <?php echo $_SESSION['username']; ?>
+    <p>Pseudo: <?php echo $_SESSION['username']; ?>
+    <p> Mail : </p>
 </body>
 </html>
