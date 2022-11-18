@@ -1,5 +1,20 @@
 <?php
-require('./includes/database.inc.php');
+require('../includes/database.inc.php');
+
+
+   //Start session
+
+   session_start();    
+
+
+   
+
+   if(isset($_POST['submit'])){
+       $username = $_POST['username'];
+       $password = $_POST['password'];
+       echo $username;
+   }
+
 ?>
 
 
@@ -12,7 +27,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="connexion.css">
+    <link rel = "stylesheet" href="../ok.css">
 
 
     <!-- importation font family "Anton"-->
@@ -38,37 +53,55 @@ require('./includes/database.inc.php');
 <body class = "body2">
 <?php
 //importation header
-require('./view/header.inc.php');
+require('../view/header.inc.php');
 ?>
-
-
-<div class="inscription">
-    <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
+     
+     <div class="inscription">
+    <img src="../Images/Background/img connexion.webp" alt="contact" class="img_contact">
     <div class="text1">
         <h1>CONNEXION</h1>
     </div>
 </div>
 
-<section>
-    <div class="formConnexion">
-        <form>
-            <label for="email">
-                <input type="email" id="email" placeholder="Email" class="formConnexion1">
-            </label>
-        </form>
-        <form>
-            <label for="password">
-                <input type="password" id="password" placeholder="Mot de passe" class="formConnexion2">
-            </label>
-        </form>
-        <button type="submit" class="buttonConnexion">Connexion</button>
-</section>
+<div class="login-page">
+  <div class="form">
+    
+    <form class="login-form" method="POST" action="login_exec.php">
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="password" name="password"/>
+      <input type="submit" value="login" name="submit">
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
 
+
+
+
+
+<div class="inscription">
+    <img src="../Images/Background/img connexion.webp" alt="contact" class="img_contact">
+    <div class="text1">
+        <h1>CONNEXION</h1>
+    </div>
+</div>
+
+<div class="login-page">
+  <div class="form">
+    
+    <form class="login-form" method="POST">
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="password" name="password"/>
+      <input type="submit" value="login" name="submit">
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
 
 
  <?php 
  // importation footer
- require('./view/footer.inc.php');
+ require('../view/footer.inc.php');
  ?>
 </body>
 </html>

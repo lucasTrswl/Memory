@@ -36,6 +36,7 @@ if(isset($_POST['valider']))
         elseif(empty($_POST['message'])){
             echo "Renseignez votre message";
         }
+
     }
 }
 
