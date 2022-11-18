@@ -16,7 +16,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="inscription.css">
+    <link rel = "stylesheet" href="yobro.css">
 
 
     <!-- importation font family "Anton"-->
@@ -55,7 +55,8 @@ require('./view/header.inc.php');
 
            
 <section>
-<div class="formInscription">
+<div class="login-page">
+<div class="form">
 <form method="POST" action="">
     <label for="email">
         <input type="email" id="email" placeholder="Email" name="email" autocomplete="off" class="formInscription1">
@@ -73,7 +74,14 @@ require('./view/header.inc.php');
         <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
 </form>
+
+<div class="btnGen">
+    <a href="generateurMP/generateurMP.php" id="btnGen2">
+        <button>Générer un mot de passe</button>
+    </div>
+
 <?php
 session_start();
 $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
