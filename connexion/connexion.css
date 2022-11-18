@@ -852,3 +852,7 @@ tbody tr, td, th
     width: 30px;
     margin-right: 10px;
 }
+
+nav{
+    margin-right: 200px;
+}
