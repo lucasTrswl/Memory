@@ -74,7 +74,7 @@ require('./view/header.inc.php');
         <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
+    <p class="message">Registered ? <a href="connexion/connexion.php">Connect to your account</a></p>
 </form>
 
 <div class="btnGen">

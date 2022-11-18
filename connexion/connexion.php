@@ -77,7 +77,7 @@ require('../includes/database.inc.php');
       <input type="text" placeholder="username" name="username"/>
       <input type="password" placeholder="password" name="password"/>
       <input type="submit" value="login" name="submit">
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
+      <p class="message">Not registered? <a href="../inscription.php">Create an account</a></p>
     </form>
   </div>
 </div>
