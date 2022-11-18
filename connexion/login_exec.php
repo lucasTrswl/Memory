@@ -24,11 +24,7 @@ if(isset($_POST['submit'])){
 
        }
        else{
-        $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO user(username, password) VALUES('$username', '$password') ";
-        $req = $db->prepare($sql);
-        $req->execute();
-        echo "Enregistrement effectué";
+        echo "mot de passe ou nom d'utilisateur incorrect";
        }
    } 
 
