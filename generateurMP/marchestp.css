@@ -36,6 +36,30 @@ nav
     color: white;
 }
 
+
+.connexion_contact
+{
+    text-decoration: none;
+    color: white;
+    padding-right: 100px;
+}
+
+.connexion_contact:hover
+{
+    color:red;
+}
+
+.cont
+{
+    text-decoration: none;
+    color: white;
+}
+
+.connexion:hover
+{
+    color: red;
+}
+
 .fond
 {
     background-image: url("Images/Background/fond_1.jpg");
