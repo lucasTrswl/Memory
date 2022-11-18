@@ -5,7 +5,7 @@
             
             //On établit la connexion
             try{
-            $db = new PDO("mysql:host=localhost;dbname=doc", 'root', 'root');
+            $db = new PDO("mysql:host=localhost;dbname=MySQL1", 'root', 'root');
             
             
             }

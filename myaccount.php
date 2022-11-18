@@ -6,7 +6,7 @@ $email = $_POST['email'];
 if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     echo "$email est une adresse e-mail  valide";
 }else{
-    echo  "$email est une adresse e-mail pas valide";
+    echo  "$email est une adresse e-mail invalide";
 }
 ?>
 
