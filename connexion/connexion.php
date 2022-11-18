@@ -79,25 +79,6 @@ require('../view/header.inc.php');
 
 
 
-<div class="inscription">
-    <img src="../Images/Background/img connexion.webp" alt="contact" class="img_contact">
-    <div class="text1">
-        <h1>CONNEXION</h1>
-    </div>
-</div>
-
-<div class="login-page">
-  <div class="form">
-    
-    <form class="login-form" method="POST">
-      <input type="text" placeholder="username" name="username"/>
-      <input type="password" placeholder="password" name="password"/>
-      <input type="submit" value="login" name="submit">
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
-  </div>
-</div>
-
 
  <?php 
  // importation footer
