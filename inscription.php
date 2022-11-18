@@ -76,7 +76,7 @@ require('./view/header.inc.php');
 </form>
 <?php
 session_start();
-$bdd=new PDO('mysql:host=localhost;dbname=MySQL1.sql; root; root');
+$bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
     $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)AND
@@ -86,7 +86,6 @@ if(isset($_POST["inscription"])){
         $mdp=sha1($_POST["mdp"]);
         $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
         $insertUser->execute(array($email,$mdp,$pseudo));
-        
     }    
     else{
         if(empty($_POST["email"])AND empty($_POST["pseudo"])AND empty($_POST["mdp"])AND empty($_POST["confirm_mdp"])){
