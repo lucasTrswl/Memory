@@ -59,7 +59,7 @@ require('../includes/database.inc.php');
         <p><a href="../inscription.php" class = "connexion"> INSCRIPTION </a></p>
        
         <p><a href="../myaccount.php" class="connexion"> MON ESPACE </a></p>
-        <p class="../pad1"><a href="contact.php" class="connexion">NOUS CONTACTER</a></p>
+        <p class="pad1"><a href="../contact.php" class="connexion">NOUS CONTACTER</a></p>
     </nav>
 </header>
      
