@@ -1,12 +1,11 @@
 
 <?php
 
-            $username = 'root';
-            $password = 'root';
+            
             
             //On établit la connexion
             try{
-            $db = new PDO("mysql:host=localhost;dbname=doc", $username, $password);
+            $db = new PDO("mysql:host=localhost;dbname=doc", 'root', 'root');
             
             
             }

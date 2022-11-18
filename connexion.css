@@ -102,6 +102,26 @@ nav
     font-family: 'Anton', sans-serif;
 }
 
+.inscription {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.centrale 
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.img_contact 
+{
+    width: 100%;
+    height: 400px;
+}
+
 .jouer
 {
     font-family: 'Anton', sans-serif;
