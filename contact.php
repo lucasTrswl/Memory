@@ -1,5 +1,45 @@
 <?php
+
+session_start();
 require('./includes/database.inc.php');
+
+//importation header
+require('./view/header.inc.php');
+
+
+if(isset($_POST['valider']))
+{
+    if(isset($_POST['nom']) AND isset($_POST['email']) AND isset($_POST['sujet']) AND isset($_POST['message']))
+    {
+
+        if(!empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['sujet']) AND !empty($_POST['message']))
+        {
+
+            $nom = htmlspecialchars($_POST['nom']);
+            $email = htmlspecialchars($_POST['email']);
+            $sujet = htmlspecialchars($_POST['sujet']);
+            $message = htmlspecialchars($_POST['message']);
+
+            echo "Votre message a bien été pris en compte";
+        }
+
+        elseif(empty($_POST['nom'])) {
+
+            echo "Veuillez renseigner votre nom";
+        }
+        elseif(empty($_POST['email'])){
+            echo "Veuillez renseigner votre email";
+        }
+        elseif(empty($_POST['sujet'])){
+            echo "Renseignez un sujet";
+        }
+        elseif(empty($_POST['message'])){
+            echo "Renseignez votre message";
+        }
+    }
+}
+
+
 ?>
 
 
@@ -36,10 +76,7 @@ require('./includes/database.inc.php');
 
 <body>
 <body class = "body2">
-<?php
-//importation header
-require('./view/header.inc.php');
-?>
+
 
 <div class="contact">
     <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
@@ -67,22 +104,42 @@ require('./view/header.inc.php');
 </section>
 
 <div class="formContact">
-    <form>
-        <label for="nom">
-            <input type="text" id="nom" placeholder="Nom" class="form1">
-        </label>
-        <label for="email">
-            <input type="email" id="email" placeholder="Email" class="form1">
-        </label>
-    </form>
-    <form>
-        <label for="sujet">
-            <input type="text" id="sujet" placeholder="Sujet"  class="form2">
-        </label>
-    </form>
-    <textarea id="message" name="story"rows="10" cols="45" class="form3">Message</textarea>
+
+<form method="POST">
+
+        <label for="nom"></label>
+
+            <input type="text" name="nom" id="nom" placeholder="Nom" class="form1">
+    
+
+        <label for="email"> </label>
+
+            <input type="email" name="email" id="email" placeholder="Email" class="form1">
+
+
+    
+
+        <label for="sujet"></label>
+            <input type="text" name="sujet" id="sujet" placeholder="Sujet"  class="form2">
+
+    
+
+
+
+    <textarea id="message" name="message" rows="10" cols="45" class="form3">Message</textarea>
+
+    
+
+    
+    <input type="submit" name="valider">
+    
+
+
+
+</form>
+
 </div>
-<button type="submit" class="buttonContact">Envoyer</button>
+
 
 <?php 
 

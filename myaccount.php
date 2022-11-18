@@ -10,6 +10,8 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 }
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -74,11 +76,15 @@ require('./view/header.inc.php');
                 
     
                     <label for="password"></label>
-                        <input type="password" id="password" placeholder="Mot de passe"  class="formInscription3">
+                        <input type="password" name="password" id="password" placeholder="Mot de passe"  class="formInscription3">
     
-                <form>
+
+                </form>
+
+
+                <form method="POST">
                     <label for="password_conf">
-                        <input type="password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
+                        <input type="password" name="confirm_password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
                     </label>
                 </form>
                 <button type="submit" class="buttonConfirm">Confirmer</button>
@@ -86,18 +92,18 @@ require('./view/header.inc.php');
             
             
             <div class="formInscription">
-                <form>
+                <form method="POST">
                     <label for="password">
                         <input type="password" id="password" placeholder="Ancien mot de passe"  class="formInscription3">
                     </label>
                 </form>
-                <form>
+                <form method="POST">
                     <label for="password">
                         <input type="password" id="password" placeholder="Nouveau mot de passe"  class="formInscription3">
                     </label>
                 </form>
 
-                <form>
+                <form method="POST">
                     <label for="password">
                         <input type="password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
                     </label>

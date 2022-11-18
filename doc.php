@@ -47,9 +47,12 @@ require('./view/header.inc.php');
     <h1 class = "Bienvenue">BIENVENUE DANS <br> NOTRE STUDIO !</h1>
     <p class = "Bienvenue1">Venez challenger les cerveaux les plus agiles!</p>
 
-<div class = button>
-    <button class="jouer" onclick="window.location.href = 'jeu.php';">JOUER</button>
-</div>
+    <div class="center">
+    <a href="jeu.php" id="btn">
+        <span>JOUER</span>
+        <div class="liquid"></div>
+      </a>
+    </div>
 </section>
 </div>
 
@@ -136,10 +139,8 @@ require('./view/header.inc.php');
 </section>
 
 <?php 
-
  // importation footer
  require('./view/footer.inc.php');
-
- ?>
+?>
 </body>
 </html>

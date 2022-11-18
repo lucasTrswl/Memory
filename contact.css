@@ -820,3 +820,8 @@ tbody tr, td, th
     width: 30px;
     margin-right: 10px;
 }
+
+
+li{
+    list-style-type: none;
+}

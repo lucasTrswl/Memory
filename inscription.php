@@ -1,6 +1,9 @@
 <?php
 require('./includes/database.inc.php');
 
+
+
+
 ?>
 
 
@@ -73,28 +76,35 @@ require('./view/header.inc.php');
 </form>
 <?php
 session_start();
-$bdd=new PDO('mysql:host=localhost;dbname=doc;charset=utf8;','root','root');
+$bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
-    $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)){
-                $email=htmlspecialchars($_POST["email"]);
-                $pseudo=htmlspecialchars($_POST["pseudo"]);
-                $mdp=sha1($_POST["mdp"]);
-                $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
-                $insertUser->execute(array($email,$mdp,$pseudo));
-    }
+    $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)AND
+    preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{10,}$#',$_POST['mdp'])AND filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        $email=htmlspecialchars($_POST["email"]);
+        $pseudo=htmlspecialchars($_POST["pseudo"]);
+        $mdp=sha1($_POST["mdp"]);
+        $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
+        $insertUser->execute(array($email,$mdp,$pseudo));
+    }    
     else{
         if(empty($_POST["email"])AND empty($_POST["pseudo"])AND empty($_POST["mdp"])AND empty($_POST["confirm_mdp"])){
             echo "Veuillez remplir tous les champs";
         }
-        elseif($_POST['mdp']!=$_POST['confirm_mdp']){
-            echo "Veuillez répéter le mot de passe à confirmer";
+        elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+            echo "L'adresse email doit être valide";
         }
         elseif(strlen($_POST['pseudo']<=4)){
             echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
         }
+        elseif($_POST['mdp']!=$_POST['confirm_mdp']){
+            echo "Veuillez répéter le mot de passe à confirmer";
+        }
         elseif(strlen($_POST['mdp']<=8)){
             echo "Le mot de passe doit contenir au moins 8 caractères";
+        }
+        elseif(!preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{10,}$#',$_POST['mdp'])){
+            echo "Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre et un caractère spécial (. * $ etc)";
         }
     }
 }
