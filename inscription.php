@@ -86,7 +86,7 @@ if(isset($_POST["inscription"])){
         $mdp=sha1($_POST["mdp"]);
         $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
         $insertUser->execute(array($email,$mdp,$pseudo));
-    }    
+    }   
     else{
         if(empty($_POST["email"])AND empty($_POST["pseudo"])AND empty($_POST["mdp"])AND empty($_POST["confirm_mdp"])){
             echo "Veuillez remplir tous les champs";
