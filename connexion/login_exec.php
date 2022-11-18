@@ -20,6 +20,8 @@ if(isset($_POST['submit'])){
 
                 echo "Connexion effectuée";
                 $_SESSION['username'] = $username;
+
+                header("Location: page_connexion.php");
             }
 
        }
