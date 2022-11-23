@@ -1,6 +1,6 @@
 <?php
-require('../includes/database.inc.php');
-require('../view/header.inc.php');
+require('./includes/database.inc.php');
+require('./view/header.inc.php');
 
    //Start session
    session_start();
@@ -25,7 +25,7 @@ require('../view/header.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="../ok.css">
+    <link rel = "stylesheet" href="./ok.css">
 
 
     <!-- importation font family "Anton"-->
@@ -52,7 +52,7 @@ require('../view/header.inc.php');
 
      
      <div class="inscription">
-    <img src="../Images/Background/img connexion.webp" alt="contact" class="img_contact">
+    <img src="./Images/Background/img connexion.webp" alt="contact" class="img_contact">
     <div class="text1">
         <h1>CONNEXION</h1>
     </div>
