@@ -387,6 +387,51 @@ footer{
     padding-left: 400px;
 }
 
+.footer2 ul
+{
+    list-style: none;
+}
+
+.footer2 li::before 
+{
+    content: "▀";
+    color: orange;
+    display: inline-block;
+    width: 20px;
+}
+
+#mail
+{
+    text-decoration: none;
+    color: white;
+}
+
+#position
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+li b
+{
+    text-decoration: none;
+    color: white;
+}
+
+li c
+{
+    text-decoration: none;
+    color: white;
+}
+
+
 .orange
 {
     color: orange;
@@ -413,7 +458,7 @@ footer{
     z-index: 1;
     position: absolute;
     text-align: center;
-    font-family: Georgia;
+    font-family: 'Anton', sans-serif;
     margin: 0 auto;
     left: 0;
     right: 0;
