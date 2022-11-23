@@ -1,9 +1,5 @@
 <?php
 require('./includes/database.inc.php');
-
-
-
-
 ?>
 
 
@@ -16,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="yobro.css">
+    <link rel = "stylesheet" href="inscription.css">
 
 
     <!-- importation font family "Anton"-->
@@ -81,17 +77,13 @@ require('./view/header.inc.php');
     <a href="generateurMP/generateurMP.php" id="btnGen2">
         <button>Générer un mot de passe</button>
     </div>
+</div>
+</div>
 
 <?php
-
 session_start();
-
 $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
-
-    $email = $_POST['email'];
-
-    
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
     $_POST['confirm_mdp']AND strlen($_POST['pseudo']>4) AND strlen($_POST['mdp']>8)AND
     preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{10,}$#',$_POST['mdp'])AND filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
@@ -100,9 +92,6 @@ if(isset($_POST["inscription"])){
         $mdp=sha1($_POST["mdp"]);
         $insertUser = $bdd->prepare('INSERT INTO utilisateur(email,mot_de_passe,pseudo) VALUES(?, ?, ?)');
         $insertUser->execute(array($email,$mdp,$pseudo));
-
-
-        $_SESSION['email'] = $email;
     }   
     else{
         if(empty($_POST["email"])AND empty($_POST["pseudo"])AND empty($_POST["mdp"])AND empty($_POST["confirm_mdp"])){
@@ -111,13 +100,13 @@ if(isset($_POST["inscription"])){
         elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
             echo "L'adresse email doit être valide";
         }
-        elseif(strlen($_POST['pseudo'])<=4){
+        elseif(strlen($_POST['pseudo']<=4)){
             echo "Le nom d'utilisateur doit contenir au moins 4 caractères";
         }
         elseif($_POST['mdp']!=$_POST['confirm_mdp']){
             echo "Veuillez répéter le mot de passe à confirmer";
         }
-        elseif(strlen($_POST['mdp'])<=8){
+        elseif(strlen($_POST['mdp']<=8)){
             echo "Le mot de passe doit contenir au moins 8 caractères";
         }
         elseif(!preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{10,}$#',$_POST['mdp'])){
@@ -128,7 +117,6 @@ if(isset($_POST["inscription"])){
 ?>
 </div>
 </section>
-
 
 <?php 
 

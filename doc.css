@@ -28,6 +28,9 @@ nav
     align-items: baseline;
 }
 
+#header{ top: 0; background: #000; height: 100%; background-attachment: fixed; width: 100px;}
+
+
 .connexion
 {
     text-decoration: none;
@@ -503,6 +506,37 @@ footer{
     color: orange;
     display: inline-block;
     width: 20px;
+}
+
+#mail
+{
+    text-decoration: none;
+    color: white;
+}
+
+#position
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+li b
+{
+    text-decoration: none;
+    color: white;
+}
+
+li c
+{
+    text-decoration: none;
+    color: white;
 }
 
 .orange
