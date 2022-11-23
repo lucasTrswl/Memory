@@ -12,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="scores.css">
+    <link rel = "stylesheet" href="tabsc.css">
 
 
     <!-- importation font family "Anton"-->
@@ -47,40 +47,16 @@ require('./view/header.inc.php');
         <h1>SCORES</h1>
     </div>
 </div>
-        
-<div class="TableEntier">
-    <table class="table-style">
-        <thead>
-            <tr>
-                <th>PSEUDO</th>
-                <th>SCORES</th>
-                <th>BEST SCORES</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr id="tr1">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="tr2">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="tr3">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="tr3">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+
+<section class="formBlock">
+<div class="ranking">
+<div class="position"><img src="Images/Perso/lucas.jpeg" alt=""><p>Lucas</p><p>1:47.27</p><i class="fa-solid fa-crown"></i></div>
+<div class="position"><img src="Images/Perso/florent.png" alt=""><p>Florent</p><p>1:55.54</p><i class="fa-sharp fa-solid fa-2"></i></div>
+<div class="position"><img src="Images/Perso/ethan.png" alt=""><p>Ethan</p><p>2:02.70</p><i class="fa-sharp fa-solid fa-3"></i></div>
+<div class="position"><img src="Images/Perso/mael.png" alt=""><p>Mael</p><p>2:16.67</p><i class="fa-sharp fa-solid fa-4"></i></div>
 </div>
+</section>
+
 <?php 
 // importation footer
 require('./view/footer.inc.php');
