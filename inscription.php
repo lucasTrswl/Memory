@@ -129,6 +129,7 @@ if(isset($_POST["inscription"])){
 </div>
 </section>
 
+
 <?php 
 
  // importation footer
