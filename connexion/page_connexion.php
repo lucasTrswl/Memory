@@ -1,11 +1,10 @@
 <?php
 require('../includes/database.inc.php');
-
-require('login_exec.php');
-
-require('../inscription.php');
+require('./login_exec.php');
 
 //require('../inscription.php');
+
+
 ?>
 
 
@@ -20,6 +19,8 @@ require('../inscription.php');
 <body>
     <h1>Profil de <?php echo $_SESSION['username']; ?>
     <p>Pseudo: <?php echo $_SESSION['username']; ?>
-    <p> Mail : </p>
+
+
+    <input type = "submit" value="Modifier votre profil" href="modif_profil.php"><p>Modifier votre profil</p>
 </body>
 </html>
