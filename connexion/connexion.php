@@ -3,8 +3,15 @@ require('../includes/database.inc.php');
 
 
    //Start session
-
-   session_start();    
+   session_start();
+   $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
+   $insertUser = $bdd->prepare('SELECT email, mot_de_passe FROM utilisateur WHERE email=? AND mot_de_passe=?');
+   $insertUser->execute(array($email,$mdp));
+   if(isset($_POST['submit'])){
+       $username = $_POST['username'];
+       $password = $_POST['password'];
+       echo $username;
+   }
 
 ?>
 
@@ -65,9 +72,9 @@ require('../includes/database.inc.php');
   <div class="form">
     
     <form class="login-form" method="POST" action="login_exec.php">
-      <input type="text" placeholder="Nom d'utilisateur" name="username"/>
-      <input type="password" placeholder="Mot de passe" name="password"/>
-      <input type="submit" value="login" name="submit"> 
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="password" name="password"/>
+      <input type="submit" value="login" name="submit">
       <p class="message">Not registered? <a href="../inscription.php">Create an account</a></p>
     </form>
   </div>
