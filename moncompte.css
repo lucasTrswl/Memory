@@ -61,7 +61,7 @@ nav
 
 .fond
 {
-    background-image: url("Images/Background/fond_1.jpg");
+    background-image: url("img connexion.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -96,6 +96,7 @@ nav
     font-family: 'Archivo', sans-serif;
 }
 
+
 .button
 {
     text-align: center;
@@ -118,8 +119,7 @@ button
     border-radius: 5px;
 }
 
-.section1
-{
+.section1{
     background-color: #020240;
     height: 500px;
     width : 100%;
@@ -229,6 +229,7 @@ button
     padding-bottom: 30px;
     padding-top: 30px;
     margin-left: 40px;
+    
     background-color: #13138b;
     border-radius: 5px;
     margin-top: 100px;
@@ -430,6 +431,7 @@ li c
     color: white;
 }
 
+
 .orange
 {
     color: orange;
@@ -456,7 +458,7 @@ li c
     z-index: 1;
     position: absolute;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: Georgia;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -587,6 +589,11 @@ li c
     width: 70%;
 }
 
+.champ_modif{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
 .formInscription
 {
     text-align: center;
@@ -862,4 +869,77 @@ tbody tr, td, th
     background-color: orange;
     width: 30px;
     margin-right: 10px;
+}
+
+.deroule {
+    float: left;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: -4%;
+    margin-left: -2%;
+}
+.deroule ul {
+    list-style-type: none;
+}
+.deroule ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.deroule ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.deroule .menu {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #e99122;
+    padding: 10px 0px;
+}
+.menu:hover { 
+    cursor: pointer;
+    color: #e99122;
+    border-bottom: 2px solid gold;
+}
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    background-color: #11102f;
+}
+.deroule > ul li:hover .sous {
+    display: flex;
+    flex-direction: column;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous .menu {
+    padding: 10px;
+    border-bottom: none;
+}
+.sous .menu:hover {
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > .menu::after {
+    content: ▼;
+    font-size: 12px;
+}
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    position: absolute;
+    background-color: #11102f;
+    width: 100%;
+    z-index: 1000%;
+}
+.deroule ul li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    position: relative;
 }
