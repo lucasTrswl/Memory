@@ -62,26 +62,64 @@ require('./view/header.inc.php');
         <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo" autocomplete="off" class="formInscription2">
     </label>
 
-    <label for="password">
+
+               
+               
         <input type="password" id="password" placeholder="Mot de passe" name="mdp" autocomplete="off"  class="formInscription3">
-    </label>
+
 
     <label for="password">
-        <input type="password" id="password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
+        <input type="password" id="confirm_password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
+
+       
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
     <p class="message">Registered ? <a href="connexion/connexion.php">Connect to your account</a></p>
 </form>
 
+
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="inscription.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function($) {
+        $('#password').passtrength({
+          minChars: 4,
+          passwordToggle: true,
+          tooltip: true
+        });
+      });
+      </script>
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 <div class="btnGen">
     <a href="generateurMP/generateurMP.php" id="btnGen2">
         <button>Générer un mot de passe</button>
     </div>
-</div>
-</div>
 
+
+
+
+
+
+    
 <?php
-session_start();
+
+//session_start();
+
 $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
 if(isset($_POST["inscription"])){
     if(!empty($_POST["email"])AND !empty($_POST["pseudo"])AND !empty($_POST["mdp"])AND !empty($_POST["confirm_mdp"])AND $_POST['mdp']==
