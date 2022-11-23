@@ -1,13 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-
-
 body
 {
     color: white;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     font-family: 'Anton', sans-serif;
+
 }
 
 .body2
@@ -62,16 +59,6 @@ nav
     color: red;
 }
 
-
-.fond
-{
-    background-image: url("Images/Background/fond_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-}
-
 .Bienvenue
 {
     text-align: center;
@@ -98,273 +85,6 @@ nav
     text-align: center;
     color: whitesmoke;
     font-family: 'Archivo', sans-serif;
-}
-
-.button
-{
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-.jouer
-{
-    font-family: 'Anton', sans-serif;
-}
-
-button
-{
-    background-color: orange;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 5px;
-}
-
-.section1
-{
-    background-color: #020240;
-    height: 500px;
-    width : 100%;
-    margin : auto;
-}
-
-.section
-{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 100px;
-}
-
-.un
-{
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-top: 5px;
-}
-
-.deux
-{
-    padding-left: 65px;
-}
-
-.number
-{
-    font-size: 40px;
-    color: lightblue;
-    padding-right: 20px;
-}
-
-.img1
-{
-    height : 500px;
-    width: 600px;
-    padding-left: 50px;
-}
-
-.img2
-{
-    height: 500px;
-    width : 300px;
-}
-
-.img3
-{
-    height : 500px;
-    width: 300px;
-    padding-right: 50px;
-}
-
-.section2
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 150px;
-
-}
-
-.section5
-{
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-.lorem
-{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2px;
-}
-
-
-.watchdog
-{
-    height: 500px;
-    width: 50%;
-    padding-left: 50px;
-    margin-top: 100px;
-    border-radius: 10px;
-}
-
-.conteneur
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width:100%;
-    margin: 10px;
-    font-size: 30px; 
-}
-
-.I
-{
-    text-align: center;
-    border: 1px solid #13138b;
-    width: 40%;
-    height: 4em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-left: 40px;
-    background-color: #13138b;
-    border-radius: 5px;
-    margin-top: 100px;
-    color: white;
-}
-
-.J
-{
-    text-align: center;
-    border: 1px solid #55c355;
-    width: 40%;
-    height: 4em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-right: 20px;
-    background-color: #55c355;
-    border-radius: 5px;
-    margin-top: 100px;
-    color: white;
-}
-
-.K
-{
-    text-align: center;
-    border: 1px solid #e557e5;
-    width: 40%;
-    height: 4em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-left: 40px;
-    background-color: #e557e5;
-    border-radius: 5px;
-    margin-top: 40px;
-    color: white;
-}
-
-.L
-{
-    text-align: center;
-    border: 1px solid orange;
-    width: 40%;
-    height: 4em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-right: 20px;
-    background-color: orange;
-    border-radius: 5px;
-    margin-top: 40px;
-    color: white;
-}
-
-.section3
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.part1
-{
-    display: flex;
-    flex-direction: row;
-}
-
-.equipe
-{
-    text-align: center;
-    padding-top: 100px;
-    font-family: 'Archivo', sans-serif;
-}
-
-#fleur
-{
-    height: 40px;
-    width: 40px;
-    padding-bottom: 100px;
-}
-
-.section4
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-
-.card1
-{
-    text-align: center;
-    background-color: #01011e;
-    padding: 40px;
-    border-radius: 5px;
-    font-family: 'Archivo', sans-serif;
-}
-
-#per1
-{
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-}
-
-.card2
-{
-    text-align: center;
-    background-color: #01011e;
-    padding: 40px;
-    border-radius: 5px;
-    font-family: 'Archivo', sans-serif;
-}
-
-#per2
-{
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-}
-
-.card3
-{
-    text-align: center;
-    background-color: #01011e;
-    padding: 40px;
-    border-radius: 5px;
-    font-family: 'Archivo', sans-serif;
-}
-
-#per3
-{
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
 }
 
 .container
@@ -403,6 +123,40 @@ footer{
     width: 20px;
 }
 
+#mail
+{
+    text-decoration: none;
+    color: white;
+}
+
+#position
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+li b
+{
+    text-decoration: none;
+    color: white;
+}
+
+li c
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 .orange
 {
     color: orange;
@@ -429,7 +183,7 @@ footer{
     z-index: 1;
     position: absolute;
     text-align: center;
-    font-family: Georgia;
+    font-family: 'Anton', sans-serif;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -442,6 +196,7 @@ footer{
 {
     width: 100%;
     height: 400px;
+    margin-bottom: 30px;
 }
 
 .section6
@@ -551,7 +306,7 @@ footer{
     z-index: 1;
     position: absolute;
     text-align: center;
-    font-family: Georgia;
+    font-family: 'Anton', sans-serif;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -836,97 +591,76 @@ tbody tr, td, th
     width: 30px;
     margin-right: 10px;
 }
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
+
+
+.posescores
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 120px;
 }
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+#pfp1
+{
+    border-radius: 80%;
+    height: 150px;
+    width: 150px;
 }
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+
+#pfp2
+{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
+
+#pfp3
+{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
-.form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+
+#pfp4
+{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-  padding-bottom: 20px;
+
+.formBlock 
+{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-}
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
-  
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+
+  .position{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid rgb(119, 119, 201);
+    border-image-slice: 1;
+    margin-top: 10px;
+    background-color: rgba(40, 45, 79, 0.757);
+    width: 1350px;
+    height: 150px;
+    border-radius: 68px;
+    margin-bottom: 35px;
+  }
+ 
+  .position img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+li{
+    list-style-type: none;
 }
