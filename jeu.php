@@ -55,7 +55,6 @@ require('./view/header.inc.php');
             function(timer){
 
             }
-
         </script>
     </div>
 </div>
