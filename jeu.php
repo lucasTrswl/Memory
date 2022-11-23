@@ -12,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="game.css">
+    <link rel = "stylesheet" href="jeu.css">
 
 
     <!-- importation font family "Anton"-->
@@ -60,6 +60,33 @@ require('./view/header.inc.php');
     </div>
 </div>
 
+<div class="menuderoule">
+    <section class="deroule">
+        <ul>
+            <li class="deroulant"><a class="menu" id="a">THEME</a>
+                <ul class="sous">
+                    <li><a class="menu" onclick="ChangeText1()">Super Smash Bros</a></li>
+                    <li><a class="menu" onclick="ChangeText2()">Rocket League</a></li>
+                    <li><a class="menu" onclick="ChangeText3()">Pokemon</a></li>
+                    <li><a class="menu" onclick="ChangeText4()">Call Of Duty</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="deroule">
+        <ul>
+            <li class="deroulant"><a class="menu" id="b">DIFFICULTE</a>
+                <ul class="sous">
+                    <li><a class="menu" onclick="ChangeText5()">Facile</a></li>
+                    <li><a class="menu" onclick="ChangeText6()">Medium</a></li>
+                    <li><a class="menu" onclick="ChangeText7()">Difficile</a></li>
+                    <li><a class="menu" onclick="ChangeText8()">Impossible</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</div>
+
 <div class="grille">
     <div class="grid-item"></div>
     <div class="grid-item"></div>
@@ -67,35 +94,10 @@ require('./view/header.inc.php');
     <div class="grid-item"></div>
     <div class="grid-item"></div>
 </div>
-    
-<div class="chat">
-    <i class="fa-regular fa-headset" id="chat"></i>
-    <p class="chat">Chat Général</p>
-</div>
 
-<div class="msgg1">
-    <p class="me">Moi</p>
-    <button id="hello">Hello</button>
-    <p class="me">Aujourd'hui à 15H42</p>
-</div>
+<script src="jeu.js"></script>
 
-<i class="fa-regular fa-headset" id="chat1"></i>
-
-<p class="me1">Arthur</p>
-<button id="rep">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius enim quibusdam accusamus reprehenderit corrupti consectetur.</button>
-<p class="me1">Aujourd'hui à 15h48</p>
-
-<div class="msg">
-<form>
-    <label for="message">
-        <input type="text" id="message" placeholder="Votre message...">
-    </label>    
-</form>
-<button type="submit" id="envoyer">Envoyer</button>
-</div>
-
-
-<?php 
+<?php
 
  // importation footer
  require('./view/footer.inc.php');

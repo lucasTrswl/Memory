@@ -588,11 +588,34 @@ li c
     color: white;
     width: 70%;
 }
-
-.champ_modif{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+.timer{
+    font-size: 50px;
+}
+.bouton{
+        position:relative;
+        width:200px;
+        color:#FFF;
+        display:block;
+        text-decoration:none;
+        margin:0 auto;
+        border-radius:5px;
+        border:solid 1px orange;
+        background:orange;
+        text-align:center;
+        padding:20px 30px;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        transition: all 0.1s;
+        -webkit-box-shadow: 0px 9px 0px orangered;
+        -moz-box-shadow: 0px 9px 0px orangered;
+        box-shadow: 0px 9px 0px orangered;
+}
+.bouton:active{
+    -webkit-box-shadow: 0px 2px 0px orangered;
+    -moz-box-shadow: 0px 2px 0px orangered;
+    box-shadow: 0px 2px 0px orangered;
+    position:relative;
+    top:7px;
 }
 .formInscription
 {
@@ -636,7 +659,7 @@ li c
 
 .buttonInscription
 {
-    margin-left: 510px;
+    margin-left: 45%;
     padding:10px;
     margin-top: 20px;
     margin-bottom: 100px;
@@ -869,4 +892,77 @@ tbody tr, td, th
     background-color: orange;
     width: 30px;
     margin-right: 10px;
+}
+
+.deroule {
+    float: left;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: -4%;
+    margin-left: -2%;
+}
+.deroule ul {
+    list-style-type: none;
+}
+.deroule ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.deroule ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.deroule .menu {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #e99122;
+    padding: 10px 0px;
+}
+.menu:hover { 
+    cursor: pointer;
+    color: #e99122;
+    border-bottom: 2px solid gold;
+}
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    background-color: #11102f;
+}
+.deroule > ul li:hover .sous {
+    display: flex;
+    flex-direction: column;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous .menu {
+    padding: 10px;
+    border-bottom: none;
+}
+.sous .menu:hover {
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > .menu::after {
+    content: ▼;
+    font-size: 12px;
+}
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    position: absolute;
+    background-color: #11102f;
+    width: 100%;
+    z-index: 1000%;
+}
+.deroule ul li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    position: relative;
 }
