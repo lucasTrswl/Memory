@@ -586,7 +586,35 @@ li c
     color: white;
     width: 70%;
 }
-
+.timer{
+    font-size: 50px;
+}
+.bouton{
+        position:relative;
+        width:200px;
+        color:#FFF;
+        display:block;
+        text-decoration:none;
+        margin:0 auto;
+        border-radius:5px;
+        border:solid 1px orange;
+        background:orange;
+        text-align:center;
+        padding:20px 30px;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        transition: all 0.1s;
+        -webkit-box-shadow: 0px 9px 0px orangered;
+        -moz-box-shadow: 0px 9px 0px orangered;
+        box-shadow: 0px 9px 0px orangered;
+}
+.bouton:active{
+    -webkit-box-shadow: 0px 2px 0px orangered;
+    -moz-box-shadow: 0px 2px 0px orangered;
+    box-shadow: 0px 2px 0px orangered;
+    position:relative;
+    top:7px;
+}   
 .formInscription
 {
     text-align: center;
