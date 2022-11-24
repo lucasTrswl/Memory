@@ -46,8 +46,8 @@ require('./view/header.inc.php');
     <div class="text1">
         <h1>JEU</h1>
         <form>
-            <div class="timer">00:00.000</div>
-            <button class="bouton">JOUER</button>
+            <h2><time>00:00:00</time></h2>
+            <button class="bouton" id="debut">JOUER</button>
             <div class="diff"></div>
         </form>
     </div>
