@@ -32,7 +32,6 @@ var t;
 bouton=document.getElementById("debut");
 theme=document.getElementById('a');
 diff=document.getElementById('b');
-bouton.addEventListener('click',);
 function tick(){
     sec++;
     if (sec >= 60) {
@@ -122,3 +121,4 @@ function debut(){
         }
     }
 }
+bouton.addEventListener('click',);
