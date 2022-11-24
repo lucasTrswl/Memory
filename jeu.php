@@ -66,6 +66,8 @@ require('./view/header.inc.php');
             </li>
         </ul>
     </section>
+</div>
+<div class="menuderoule2">
     <section class="deroule">
         <ul>
             <li class="deroulant"><a class="menu" id="b">DIFFICULTE</a>
@@ -79,6 +81,7 @@ require('./view/header.inc.php');
         </ul>
     </section>
 </div>
+
 <div class="contenu">
     <div class="wrapper">
       <ul class="cards">
