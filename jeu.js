@@ -219,5 +219,5 @@ shuffleCard();
 
 refreshBtn.addEventListener("click", shuffleCard);
 
-cards.forEach(card => {
+cards.forEach(card) 
     card.addEventListener("click", flipCard);
