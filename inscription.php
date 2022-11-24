@@ -74,7 +74,7 @@ require('./view/header.inc.php');
        
     </label>
     <input type="submit" class="buttonInscription" name="inscription">
-    <p class="message">Registered ? <a href="connexion/connexion.php">Connect to your account</a></p>
+    <p class="message">Registered ? <a href="connexion.php">Connect to your account</a></p>
 </form>
 
 
