@@ -12,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="jeu.css">
+    <link rel = "stylesheet" href="gamegrille.css">
 
 
     <!-- importation font family "Anton"-->
@@ -85,13 +85,160 @@ require('./view/header.inc.php');
         </ul>
     </section>
 </div>
-
-<div class="grille">
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
+<div class="contenu">
+    <div class="wrapper">
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+          <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+        <div class="view back-view">
+        <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+        <div class="view back-view">
+        <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+        <div class="view back-view">
+        <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        <li class="card">
+        <div class="view back-view">
+        <img src="images/Memory/que_icon.svg" alt="icon">
+          </div>
+        </li>
+        
+      </ul>
+    </div>
 </div>
 
 <script src="jeu.js"></script>
