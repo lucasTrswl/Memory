@@ -27,6 +27,6 @@ function ChangeText8(){
 chrono=document.querySelector('.timer');
 theme=document.getElementById('a');
 diff=document.getElementById('b');
-function(début){
+function début(){
 
 }
