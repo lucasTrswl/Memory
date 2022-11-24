@@ -132,8 +132,8 @@ nav
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
 
 .inscription {
