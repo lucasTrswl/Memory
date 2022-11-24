@@ -50,12 +50,6 @@ require('./view/header.inc.php');
             <button class="bouton">JOUER</button>
             <div class="diff"></div>
         </form>
-        <script>
-            chrono=document.querySelector('.timer');
-            function(timer){
-
-            }
-        </script>
     </div>
 </div>
 

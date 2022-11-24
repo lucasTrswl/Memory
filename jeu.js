@@ -24,3 +24,9 @@ function ChangeText7(){
 function ChangeText8(){
     document.getElementById("b").innerHTML="Impossible"
 }
+chrono=document.querySelector('.timer');
+theme=document.getElementById('a');
+diff=document.getElementById('b');
+function(début){
+
+}
