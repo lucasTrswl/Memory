@@ -1019,7 +1019,7 @@ tbody tr, td, th
 {
     background: #f8f8f8;
     width: 788px;
-    height: 693px;
+    height: 740px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     margin: 0;
@@ -1051,8 +1051,8 @@ tbody tr, td, th
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
-    height: calc(100% / 4 - 10px);
-    width: calc(100% / 4 - 10px);
+    height: calc(100% / 5 - 10px);
+    width: calc(100% / 5 - 10px);
 }
 
 .card.shake

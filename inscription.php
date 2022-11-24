@@ -110,12 +110,6 @@ require('./view/header.inc.php');
         <button>Générer un mot de passe</button>
     </div>
 
-
-
-
-
-
-    
 <?php
 
 //session_start();
