@@ -2,9 +2,8 @@
 
 session_start();
 require('./includes/database.inc.php');
-
-//importation header
 require('./view/header.inc.php');
+
 
 
 if(isset($_POST['valider']))
@@ -77,8 +76,6 @@ if(isset($_POST['valider']))
 
 <body>
 <body class = "body2">
-
-
 <div class="contact">
     <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
     <div class="text">

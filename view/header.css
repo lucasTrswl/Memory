@@ -1,0 +1,46 @@
+nav
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color : white;
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    align-items: baseline;
+}
+
+.connexion
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+.connexion_contact
+{
+    text-decoration: none;
+    color: white;
+    padding-right: 100px;
+}
+
+.connexion_contact:hover
+{
+    color:red;
+}
+
+.cont
+{
+    text-decoration: none;
+    color: white;
+}
+
+.connexion:hover
+{
+    color: red;
+}
+ul{
+    list-style: none;
+}
+.deroulant{
+    display: none;
+}
