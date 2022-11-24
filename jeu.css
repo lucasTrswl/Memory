@@ -948,9 +948,10 @@ tbody tr, td, th
 {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.sous li 
+.sous li
 {
     float: none;
     width: 100%;
@@ -997,15 +998,21 @@ tbody tr, td, th
 .menuderoule
 {
     display: flex;
-    justify-content: left;
+    flex: end;
     padding-top: 90px;
 }
 
 .menuderoule2
 {
     display: flex;
+    flex: start;    
+    padding-top: 90px;
+}
+
+.menuderoule
+{
+    display: flex;
     justify-content: right;
-    padding-top: 90px; 
 }
 
 .contenu
