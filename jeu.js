@@ -29,9 +29,7 @@ var sec = 0;
 var min = 0;
 var hrs = 0;
 var t;
-bouton=document.getElementById("debut");
-theme=document.getElementById('a');
-diff=document.getElementById('b');
+function timer(){
 function tick(){
     sec++;
     if (sec >= 60) {
@@ -59,66 +57,71 @@ start.onclick = timer;
 stop.onclick = function() {
     clearTimeout(t);
 }
+}
 reset.onclick = function() {
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
-function debut(){
+bouton=document.getElementById("debut");
+theme=document.getElementById('a');
+diff=document.getElementById('b');
+bouton.addEventListener('click',début);
+function début(){
     if(theme==="Pokemon"){
         if(diff==="Facile"){
-
+            timer();
         }
         else if(diff==="Normal"){
-
+            timer();
         }
         else if(diff==="Difficile"){
-
+            timer();
         }
         else if(diff==="Impossible"){
-
+            timer();
         }
     }
     else if(theme==="Super Smash Bros"){
         if(diff==="Facile"){
-
+            timer();
         }
         else if(diff==="Normal"){
-
+            timer();
         }
         else if(diff==="Difficile"){
-
+            timer();
         }
         else if(diff==="Impossible"){
-            
+            timer();
         }
     }
     else if(theme==="Call Of Duty"){
         if(diff==="Facile"){
-
+            timer();
         }
         else if(diff==="Normal"){
-
+            timer();
         }
         else if(diff==="Difficile"){
-
+            timer();
         }
         else if(diff==="Impossible"){
-            
+            timer();
         }
     }
     else if(theme==="Rocket League"){
         if(diff==="Facile"){
-
+            timer();
         }
         else if(diff==="Normal"){
-
+            timer();
         }
         else if(diff==="Difficile"){
-
+            timer();
         }
         else if(diff==="Impossible"){
-            
+            timer();
         }
     }
 }
-bouton.addEventListener('click',);
+bouton.addEventListener('click',début);
