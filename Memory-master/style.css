@@ -1,0 +1,155 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5;
+}
+
+section {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    align-self: flex-end;
+    margin: 0;
+}
+
+#plateau {
+    width: 100%;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(25% - 10px);
+    cursor: pointer;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-top: 10px;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 10px 2px #e9e1ca;
+    -moz-box-shadow: 0px 0px 10px 2px #e9e1ca;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=#e9e1ca, Strength=12);
+    zoom: 1;
+    box-shadow: 0px 0px 10px 2px #e9e1ca;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.card figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    background: #e9e1ca;
+}
+
+.card .front {
+    -webkit-transform: rotateY( 180deg);
+    -moz-transform: rotateY( 180deg);
+    -o-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+.card.flipped {
+    -webkit-transform: rotateY( 180deg);
+    -moz-transform: rotateY( 180deg);
+    -o-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+    scale: 1.05;
+}
+
+#menu {
+    z-index: 2;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    background-color: #ded2ae;
+    border-radius: 10px;
+    padding: 30px 10px;
+    font-size: 1.6rem;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #fff;
+}
+
+#menu img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: calc(50% - 45px);
+    top: -55px;
+}
+
+#menu button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #368090;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+}
+
+#menu button:hover {
+    background-color: #1d5561;
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    .card {
+        margin-top: 5px;
+        width: calc(33% - 5px);
+    }
+}
