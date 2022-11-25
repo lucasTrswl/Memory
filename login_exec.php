@@ -1,15 +1,15 @@
 <?php
 
-require('../includes/database.inc.php');
+require('./includes/database.inc.php');
 
 session_start();    
 
 if(isset($_POST['submit'])){
        $username = $_POST['username'];
        $password = $_POST['password'];
-       echo $username;
+       //echo $username;
 
-       $sql = "SELECT * FROM user WHERE username = '$username' ";
+       $sql = "SELECT * FROM user WHERE username = '$username', password='$password' ";
        $result = $db->prepare($sql);
        $result->execute();
 
@@ -23,12 +23,11 @@ if(isset($_POST['submit'])){
             }
 
        }
+       else if(empty($username) || empty($password)){
+        echo "Veuillez remplir tous les champs";
+       }
        else{
-        $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO user(username, password) VALUES('$username', '$password') ";
-        $req = $db->prepare($sql);
-        $req->execute();
-        echo "Enregistrement effectué";
+        echo "Pseudo ou mot de passe incorrects";
        }
    } 
 
