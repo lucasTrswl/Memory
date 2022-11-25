@@ -1,0 +1,27 @@
+.messages{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+margin-bottom: 20px;
+    background-color: aqua;
+    height: 30px;
+    width : 600px;
+    border-radius: 5px;
+
+}
+
+
+.date{
+    padding-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.author{
+    font-weight: bold;
+    color:white;
+}
+
+h1{
+padding-left: 150px;}
+
