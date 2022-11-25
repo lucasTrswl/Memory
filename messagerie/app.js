@@ -14,7 +14,11 @@
     // 2. Quand elle reçoit les données, il faut qu'elle les traite (en exploitant le JSON) et il faut qu'elle affiche ces données au format HTML
     requeteAjax.onload = function(){
       const resultat = JSON.parse(requeteAjax.responseText);
+
+      console.log(resultat);
+
       const html = resultat.reverse().map(function(message){
+        console.log(message);
         return `
           <div class="message">
             <span class="date">${message.Date_heure_message.substring(11, 16)}</span>
