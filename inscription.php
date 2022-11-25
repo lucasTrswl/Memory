@@ -109,7 +109,7 @@ require('./view/header.inc.php');
     <a href="generateurMP/generateurMP.php" id="btnGen2">
         <button>Générer un mot de passe</button>
     </div>
-
+</a>
 <?php
 
 //session_start();
