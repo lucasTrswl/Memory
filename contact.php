@@ -102,7 +102,7 @@ if(isset($_POST['valider']))
 </section>
 
 <div class="container">
-  <h1>Formulaire de contact</h1>
+  <h2>Formulaire de contact</h2>
   <form action="/action_page.php">
     <label for="fname">Nom & prénom</label>
     <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">

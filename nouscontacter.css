@@ -686,7 +686,8 @@ body {font-family: Arial, Helvetica, sans-serif;
   }
   label{margin-right: 0px;
     margin-left: 0px;
-    width: 100%;}
+    width: 100%;
+    color:black}
   
   input[type=submit] {
     background-color: #1255a2;
@@ -713,8 +714,11 @@ body {font-family: Arial, Helvetica, sans-serif;
     margin:0 auto;
   }
   h1  {
-    color: #ffc800;
+    color: white;
     width: 100%;
+  }
+  h2{
+    color: #01011e;
   }
   body {font-family: Arial, Helvetica, sans-serif;
     padding: 0px;}
@@ -760,6 +764,6 @@ body {font-family: Arial, Helvetica, sans-serif;
     margin:0 auto;
   }
   h1  {
-    color: #ffc800;
+    color: white;
     width: 100%;
   }
