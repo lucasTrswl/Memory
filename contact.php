@@ -101,39 +101,25 @@ if(isset($_POST['valider']))
     </div>
 </section>
 
-<div class="formContact">
+<div class="container">
+  <h1>Formulaire de contact</h1>
+  <form action="/action_page.php">
+    <label for="fname">Nom & prénom</label>
+    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
 
-<form method="POST">
+    <label for="sujet">Sujet</label>
+    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
 
-        <label for="nom"></label>
-
-            <input type="text" name="nom" id="nom" placeholder="Nom" class="form1">
-    
-
-        <label for="email"> </label>
-
-            <input type="email" name="email" id="email" placeholder="Email" class="form1">
-
-
-    
-
-        <label for="sujet"></label>
-            <input type="text" name="sujet" id="sujet" placeholder="Sujet"  class="form2">
-
-    
+    <label for="emailAddress">Email</label>
+    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
 
 
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
 
-    <textarea id="message" name="message" rows="10" cols="45" class="form3">Message</textarea>
-
-    
-
-    
-    <input type="submit" name="valider">
-    
-
-
-
+    <input type="submit" value="Envoyer">
+  </form>
+</div>
 </form>
 
 </div>
