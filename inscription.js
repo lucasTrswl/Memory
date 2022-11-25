@@ -129,7 +129,7 @@
     },
 
     togglePassword: function(){
-      var buttonShow = jQuery('<span/>', {class: 'showPassword', html: '<img src="'+ this.options.eyeImg +'" />'}),
+      var buttonShow = jQuery('<span/>', {class: 'showPassword', html: '<img src="'+ this.options.yeux +'" />'}),
           input      =  jQuery('<input/>', {type: 'text'}),
           passwordInput      = this;
 

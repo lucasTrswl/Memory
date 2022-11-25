@@ -20,7 +20,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-   <link rel = "stylesheet" href="moncompte.css">
+   <link rel = "stylesheet" href="moncompteamoi.css">
 
 
     <!-- importation font family "Anton"-->
@@ -55,21 +55,18 @@ require('./view/header.inc.php');
         <h1>MON ESPACE</h1>
     </div>
 </div>
-
-<div class="telephone">
-    <section class="deroule">
-        <ul>
-            <li class="deroulant"><a class="menu" href="./myaccount.php">Profil</a>
-                <ul class="sous">
-                    <li><a class="menu" href="./">Modifier mon profil</a></li>
-                    <li><a class="menu" href="./">Modifier mon adresse mail</a></li>
-                    <li><a class="menu" href="./">Modifier mon mot de passe</a></li>
-                    <li><a class="menu" href="./">Déconnexion</a></li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+<div class="posi">
+<div class="position"><img src="Images/Perso/lucas.jpeg" alt=""></div>
 </div>
+    <p><i id="user" class="fa-solid fa-user"></i></p>
+<div class="carte">
+    <div class="prem"><p>NOM :</p><input>TURSCHWELL</input></div>
+    <div class="dieux"> <p>PRENOM :</p><input>LUCAS</input></div>
+    <div class="trois"><p>PSEUDO :</p><input>TAEVOR</input></div>
+    <div class="quatre"><p>TEL :</p><input>07.45.67.98.24</input></div>
+    <div class="cinq"><p>MAIL :</p><input>Lucas@gmail.com</input></div>
+</div>
+
 
 <div class="champ_modif">   
     <div class="formInscription">
@@ -108,30 +105,6 @@ require('./view/header.inc.php');
             <button type="submit" class="buttonConfirm">Confirmer</button>
         </div>
     </div>
-    <div class="card">
-    <div class="top-container">   
-        <img src="https://i.imgur.com/G1pXs7D.jpg" class="img-fluid profile-image" width="70">
-        <div class="ml-3">
-            <h5 class="name">Clarke Jeffery</h5>
-            <p class="mail">clark@zmail.com</p>
-        </div>
-        </div>
-        <div class="middle-container d-flex justify-content-between align-items-center mt-3 p-2">
-        <div class="dollar-div px-3">   
-        <div class="round-div"><i class="fa fa-dollar dollar"></i></div>
-        </div>
-        <div class="d-flex flex-column text-right mr-2">
-            <span class="Monprofil">Profil</span>
-        </div> 
-        </div>
-        <div class="Bscores">
-            <span class="scoredefou">scores< /span>
-        </div>
-        <div class="modifprofil">
-            <span class="modif">Modifier profile</span>
-        </div>
-     </div>
-</div>
 </body>
 <?php 
  // importation footer
