@@ -44,9 +44,10 @@
    */
   
   function postMessage(event){
+    //alert('in');
     // 1. Elle doit stoper le submit du formulaire
     event.preventDefault();
-  
+ 
     // 2. Elle doit récupérer les données du formulaire
     const author = document.querySelector('#author');
     const content = document.querySelector('#content');
@@ -70,7 +71,7 @@
   }
   
   document.querySelector('form').addEventListener('submit', postMessage);
-  
+
   /**
    * Il nous faut une intervale qui demande le rafraichissement
    * des messages toutes les 3 secondes et qui donne 

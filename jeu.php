@@ -46,11 +46,9 @@ require('./view/header.inc.php');
     <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
     <div class="text1">
         <h1>JEU</h1>
-        <form>
             <h2><time>00:00:00</time></h2>
             <button class="bouton" id="debut">JOUER</button>
             <div class="diff"></div>
-        </form>
     </div>
 </div>
 
