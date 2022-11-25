@@ -1158,3 +1158,94 @@ tbody tr, td, th
     max-width: 35px;
   }
 }
+
+
+
+
+
+/**
+ * Faisons du beau, faisons du gracieux. 
+ */
+
+/**
+ * Typographies Google Maggle !
+ */
+ @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Ubuntu');
+
+ h1 {
+   font-family: "Cinzel Decorative", cursive;
+ }
+ 
+
+
+
+ 
+ .chat{
+  width: 750px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top : 100px;
+
+ 
+ }
+ 
+ header {
+   text-align: center;
+ }
+ 
+ .messages {
+   background-color: steelblue;
+   border-radius: 10px;
+   /*padding: 1em;*/
+   height: 300px;
+   width: 300px;
+   overflow: auto;
+  padding-right: 500px;
+ }
+ 
+ .message {
+   color: white;
+   padding: 0.3em;
+   text-align: left;
+ }
+ 
+ .date, .author {
+   font-weight: bold;
+ }
+ 
+ form {
+   display: flex;
+   margin-top: 1em;
+   justify-content: space-between;
+ }
+ 
+ input, button {
+   padding: 0.5em;
+ }
+ 
+.user-inputs{
+
+    margin-bottom: 100px;
+}
+ input {
+   margin-right: 10px;
+ }
+ 
+ #author {
+   width: 20%;
+ }
+ 
+ #content {
+   width: 60%;
+ }
+ 
+ button[type="submit"]{
+   width: 20%;
+ }
+
+ .btn_msg{
+    padding: 20px;
+    margin-right: 650px;
+ }

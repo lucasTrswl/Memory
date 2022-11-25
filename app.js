@@ -21,7 +21,7 @@
         console.log(message);
         return `
           <div class="message">
-            <span class="date">${message.Date_heure_message.substring(11, 16)}</span>
+            <span class="date">${message.Date_heure_message.substring(11, 16)}</span> :
             <span class="author">${message.author}</span> : 
             <span class="content">${message.content}</span>
           </div>
