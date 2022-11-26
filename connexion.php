@@ -5,7 +5,7 @@ require('./includes/database.inc.php');
    session_start();
    $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
    $insertUser = $bdd->prepare('SELECT email, mot_de_passe FROM utilisateur WHERE email=? AND mot_de_passe=?');
-   $insertUser->execute(array());
+   $insertUser->execute(array($email,$mdp));
    if(isset($_POST['submit'])){
        $username = $_POST['username'];
        $password = $_POST['password'];
@@ -56,7 +56,7 @@ require('./includes/database.inc.php');
         <p><a href="./inscription.php" class = "connexion"> INSCRIPTION </a></p>
        
         <p><a href="./myaccount.php" class="connexion"> MON ESPACE </a></p>
-        <p class="pad1"><a href="./contact.php" class="connexion">NOUS CONTACTER</a></p>
+        <p class="pad1"><a href="../contact.php" class="connexion">NOUS CONTACTER</a></p>
     </nav>
 </header>
      
@@ -83,7 +83,34 @@ require('./includes/database.inc.php');
 
 
 
+  <div class="btn" style="height: 50px;
+    width: 50px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
+</div>
+<script>
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
+</div>
 
 
  <?php 

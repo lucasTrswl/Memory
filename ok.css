@@ -976,3 +976,14 @@ body
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }
+.remonte {
+    position: fixed;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+  }

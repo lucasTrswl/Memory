@@ -1250,3 +1250,14 @@ tbody tr, td, th
     padding: 20px;
     margin-right: 650px;
  }
+ .remonte {
+    right: 0%;
+    position: fixed;
+    bottom: 0%;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    width: 25px;
+    height: 25px;
+  }

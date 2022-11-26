@@ -20,7 +20,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-   <link rel = "stylesheet" href="moncompteamoi.css">
+   <link rel = "stylesheet" href="moncompteamoiamoi.css">
 
 
     <!-- importation font family "Anton"-->
