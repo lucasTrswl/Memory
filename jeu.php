@@ -51,8 +51,8 @@ require('./view/header.inc.php');
             <div class="diff"></div>
     </div>
 </div>
-<div class="btn" style="height: 100px;
-    width: 100px;
+<div class="btn" style="height: 50px;
+    width: 50px;
     background: orange;
     border-radius: 50%;
     color:white;

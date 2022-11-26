@@ -56,8 +56,8 @@ require('./view/header.inc.php');
 <div class="position"><img src="Images/Perso/mael.png" alt=""><p>Mael</p><p>2:16.67</p><i class="fa-sharp fa-solid fa-4"></i></div>
 </div>
 </section>
-<div class="btn" style="height: 100px;
-    width: 100px;
+<div class="btn" style="height: 50px;
+    width: 50px;
     background: orange;
     border-radius: 50%;
     color:white;
