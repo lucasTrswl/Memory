@@ -20,7 +20,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-   <link rel = "stylesheet" href="moncompteamoiamoi.css">
+   <link rel = "stylesheet" href="moncompteamoi.css">
 
 
     <!-- importation font family "Anton"-->
@@ -105,6 +105,34 @@ require('./view/header.inc.php');
             <button type="submit" class="buttonConfirm">Confirmer</button>
         </div>
     </div>
+    <div class="btn" style="height: 50px;
+    width: 50px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
+</div>
+<script>
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
+</div>
 </body>
 <?php 
  // importation footer

@@ -1,74 +1,80 @@
 <?php
-
-/**
- * Connexion simple à la base de données via PDO !
- */
-$db = new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8', 'root', 'root', [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-]);
-
-/**
- * On doit analyser la demande faite via l'URL (GET) afin de déterminer si on souhaite récupérer les messages ou en écrire un
- */
-$task = "list";
-
-if(array_key_exists("task", $_GET)){
-  $task = $_GET['task'];
-}
-
-if($task == "write"){
-  postMessage();
-} else {
-  getMessages();
-}
-
-/**
- * Si on veut récupérer, il faut envoyer du JSON
- */
-function getMessages(){
-  global $db;
-  // 1. On requête la base de données pour sortir les 20 derniers messages
-  $resultats = $db->prepare("SELECT * FROM `message` ORDER BY Date_heure_message DESC LIMIT 20");
-  $resultats -> execute();
-  // 2. On traite les résultats
-  $messages = $resultats->fetchAll(PDO::FETCH_ASSOC);
-  // 3. On affiche les données sous forme de JSON
-  echo json_encode($messages);
-}
-
-/**
- * Si on veut écrire au contraire, il faut analyser les paramètres envoyés en POST et les sauver dans la base de données
- */
-
-function postMessage(){
-  global $db;
-  
-  // 1. Analyser les paramètres passés en POST (author, content)
-  
-  if(!array_key_exists('author', $_POST) || !array_key_exists('content', $_POST)){
-
-    echo json_encode(["status" => "error", "message" => "One field or many have not been sent"]);
-    return;
-
-  }
-
-  $author = $_POST['author'];
-  $content = $_POST['content'];
-
-  // 2. Créer une requête qui permettra d'insérer ces données
-  $query = $db->prepare('INSERT INTO message SET author = :author, content = :content, Date_heure_message = NOW()');
+require('../includes/database.inc.php');
+?>
 
 
-  $query->execute([
-   
-    "author" => $author,
-    "content" => $content
-  ]);
+<!DOCTYPE html>
+<html lang="fr">
 
-  // 3. Donner un statut de succes ou d'erreur au format JSON
-  echo json_encode(["status" => "success"]);
-}
-/**
- * Voilà c'est tout en gros.
- */
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="generateurMP.css">
+
+    <!-- importation font family "Anton"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- ilmportation font family "Archivo"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+    <!-- importation icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    
+    <title>Génératuer de mot de passe</title>
+
+</head>
+
+<body>
+<body class = "body2">
+<header>
+    <nav>
+        <p class="power"><a href="../doc.php" class="connexion"> The power of memory</a></p>
+        <p class="pad"><a href="../jeu.php" class="connexion">JEU</a></p>
+        <p><a href="../scores.php" class="connexion"> SCORES</a></p>
+        <p><a href="../inscription.php" class = "connexion"> INSCRIPTION </a></p>
+       
+        <p><a href="../myaccount.php" class="connexion"> MON ESPACE </a></p>
+        <p class="pad1"><a href="../contact.php" class="connexion">NOUS CONTACTER</a></p>
+    </nav>
+</header>
+
+
+<div class="inscription">
+    <img src="../Images/Background/img connexion.webp" alt="contact" class="img_contact">
+    <div class="text1">
+        <h1>GENERATEUR DE MOT DE PASSE</h1>
+    </div>
+</div>
+<div class="centrale">
+    <section class="inputBox">
+        <h2>Générateur de mot de passe</h2>
+        <div class="passwordBox">
+            <input type="text" id="password" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="getPassword()">Générer</button>
+            <button id="copy" onclick="copyMdp()">Copier</button>
+        </div>
+    </section>
+    <script src="generateur.js"></script>
+</div>
+
+
+<?php 
+// importation footer
+require('../view/footer.inc.php');
+?>
+</body>
+
+
+</html>

@@ -873,28 +873,24 @@ tbody tr, td, th
   margin: auto;
 }
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(119, 119, 201);
-    border-image-slice: 1;
-    margin-top: 10px;
-    background-color: rgba(40, 45, 79, 0.757);
-    width: 500px;
-    height: 320px;
-    border-radius: 68px;
-    margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background-color: rgba(40, 45, 79, 0.757);
+  background: #f2f2f2;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  border-radius: 30px;
   font-size: 14px;
 }
 .form button {
@@ -952,26 +948,14 @@ tbody tr, td, th
   color: #4d4d4d;
 }
 .container .info span a {
-  color: #fff1f1;
+  color: #000000;
   text-decoration: none;
 }
 .container .info span .fa {
   color: #EF3B3A;
 }
-
-#email
-{
-    color: white;
-}
-
-.ens
-{
-    display: flex;
-    justify-content: center;
-}
-
-body 
-{
+body {
+  
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      

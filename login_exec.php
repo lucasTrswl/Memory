@@ -16,18 +16,27 @@ if(isset($_POST['submit'])){
        if($result->rowCount() > 0){
 
             $data = $result->fetchAll();
-            if(password_verify($password, $data[0]["password"])){
+             if(password_verify($password, $data[0]["password"])){
 
-                echo "Connexion effectuée";
-                $_SESSION['username'] = $username;
+            echo "Connexion effectuée";
+            $_SESSION['username'] = $username;
             }
 
        }
        else if(empty($username) || empty($password)){
-        echo "Veuillez remplir tous les champs";
+        echo '<script> alert("Veuillez remplir tous les champs") </script>';
        }
-       else{
-        echo "Pseudo ou mot de passe incorrects";
+       else if(!$username){
+        echo '<script> alert("Pseudo ou mot de passe incorrect") </script>';
+
+       }
+       else if(!$password){
+        echo '<script> alert("Pseudo ou mot de passe incorrect") </script>';
+
+       }
+       else if($password AND $username){
+        echo '<script> alert("Connexion réussie!") </script>';
+
        }
    } 
 
