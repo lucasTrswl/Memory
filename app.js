@@ -14,10 +14,14 @@
     // 2. Quand elle reçoit les données, il faut qu'elle les traite (en exploitant le JSON) et il faut qu'elle affiche ces données au format HTML
     requeteAjax.onload = function(){
       const resultat = JSON.parse(requeteAjax.responseText);
+
+      console.log(resultat);
+
       const html = resultat.reverse().map(function(message){
+        console.log(message);
         return `
           <div class="message">
-            <span class="date">${message.created_at.substring(11, 16)}</span>
+            <span class="date">${message.Date_heure_message.substring(11, 16)}</span> :
             <span class="author">${message.author}</span> : 
             <span class="content">${message.content}</span>
           </div>
@@ -40,9 +44,10 @@
    */
   
   function postMessage(event){
+    //alert('in');
     // 1. Elle doit stoper le submit du formulaire
     event.preventDefault();
-  
+ 
     // 2. Elle doit récupérer les données du formulaire
     const author = document.querySelector('#author');
     const content = document.querySelector('#content');
@@ -66,7 +71,7 @@
   }
   
   document.querySelector('form').addEventListener('submit', postMessage);
-  
+
   /**
    * Il nous faut une intervale qui demande le rafraichissement
    * des messages toutes les 3 secondes et qui donne 

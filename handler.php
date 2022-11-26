@@ -28,19 +28,22 @@ if($task == "write"){
  */
 function getMessages(){
   global $db;
-
   // 1. On requête la base de données pour sortir les 20 derniers messages
-  $resultats = $db->query("SELECT * FROM message ORDER BY Date_heure_message DESC LIMIT 20");
+  $resultats = $db->prepare("SELECT * FROM `message` ORDER BY Date_heure_message DESC LIMIT 20");
+  $resultats -> execute();
   // 2. On traite les résultats
-  $messages = $resultats->fetchAll();
+  $messages = $resultats->fetchAll(PDO::FETCH_ASSOC);
   // 3. On affiche les données sous forme de JSON
   echo json_encode($messages);
 }
+
 /**
  * Si on veut écrire au contraire, il faut analyser les paramètres envoyés en POST et les sauver dans la base de données
  */
+
 function postMessage(){
   global $db;
+  
   // 1. Analyser les paramètres passés en POST (author, content)
   
   if(!array_key_exists('author', $_POST) || !array_key_exists('content', $_POST)){

@@ -30,7 +30,7 @@ require('../includes/database.inc.php');
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
     
-    <title>Génératuer de mot de passe</title>
+    <title>Générateur de mot de passe</title>
 
 </head>
 

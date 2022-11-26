@@ -12,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="jeu.css">
+    <link rel = "stylesheet" href="jeux.css">
 
 
     <!-- importation font family "Anton"-->
@@ -31,6 +31,7 @@ require('./includes/database.inc.php');
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
     
+   
     <title>Document</title>
 </head>
 
@@ -45,11 +46,9 @@ require('./view/header.inc.php');
     <img src="Images/Background/img connexion.webp" alt="contact" class="img_contact">
     <div class="text1">
         <h1>JEU</h1>
-        <form>
             <h2><time>00:00:00</time></h2>
             <button class="bouton" id="debut">JOUER</button>
             <div class="diff"></div>
-        </form>
     </div>
 </div>
 
@@ -84,11 +83,36 @@ require('./view/header.inc.php');
 
 <script src="grille.js"></script>
 
+
+
+<section class="chat">
+    <div class="messages">
+
+</div>
+</section>
+    <div class="user-inputs">
+      <form action="handler.php?task=write" method="POST">
+        <input type="text" name="author" id="author" placeholder="Pseudo">
+        <input type="text" id="content" name="content" placeholder="Ecrivez votre message">
+        <button type="submit" class="btn_msg">🔥 Envoyer !</button>
+      </form>
+    </div>
+  </section>
+  <script src="app.js"></script>
+
 <?php
+
+
+//importation chat sur la page de jeu
 
  // importation footer
  require('./view/footer.inc.php');
 
  ?>
+
+
+
+     
+   
 </body>
 </html>
