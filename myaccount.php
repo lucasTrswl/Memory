@@ -20,7 +20,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-   <link rel = "stylesheet" href="moncompte.css">
+   <link rel = "stylesheet" href="moncompteamoi.css">
 
 
     <!-- importation font family "Anton"-->
@@ -55,73 +55,83 @@ require('./view/header.inc.php');
         <h1>MON ESPACE</h1>
     </div>
 </div>
-
-<div class="telephone">
-    <section class="deroule">
-        <ul>
-            <li class="deroulant"><a class="menu" href="./myaccount.php">Profil</a>
-                <ul class="sous">
-                    <li><a class="menu" href="./">Modifier mon profil</a></li>
-                    <li><a class="menu" href="./">Modifier mon adresse mail</a></li>
-                    <li><a class="menu" href="./">Modifier mon mot de passe</a></li>
-                    <li><a class="menu" href="./">Déconnexion</a></li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+<div class="posi">
+<div class="position"><img src="Images/Perso/lucas.jpeg" alt=""></div>
 </div>
-<div class="page-content page-container" id="page-content">
-    <div class="padding">
-        <div class="row container d-flex justify-content-center">
-<div class="col-xl-6 col-md-12">
-    <div class="card user-card-full">
-        <div class="row m-l-0 m-r-0">
-            <div class="col-sm-4 bg-c-lite-green user-profile">
-                <div class="card-block text-center text-white">
-                    <div class="m-b-25">
-                        <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
-                    </div>
-                    <h6 class="f-w-600">Hembo Tingor</h6>
-                    <p>Web Designer</p>
-                    <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="card-block">
-                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p class="m-b-10 f-w-600">Email</p>
-                            <h6 class="text-muted f-w-400">rntng@gmail.com</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="m-b-10 f-w-600">Phone</p>
-                            <h6 class="text-muted f-w-400">98979989898</h6>
-                        </div>
-                    </div>
-                    <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p class="m-b-10 f-w-600">Recent</p>
-                            <h6 class="text-muted f-w-400">Sam Disuja</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="m-b-10 f-w-600">Most Viewed</p>
-                            <h6 class="text-muted f-w-400">Dinoter husainm</h6>
-                        </div>
-                    </div>
-                    <ul class="social-link list-unstyled m-t-40 m-b-10">
-                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i class="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+    <p><i id="user" class="fa-solid fa-user"></i></p>
+<div class="carte">
+    <div class="prem"><p>NOM :</p><input>TURSCHWELL</input></div>
+    <div class="dieux"> <p>PRENOM :</p><input>LUCAS</input></div>
+    <div class="trois"><p>PSEUDO :</p><input>TAEVOR</input></div>
+    <div class="quatre"><p>TEL :</p><input>07.45.67.98.24</input></div>
+    <div class="cinq"><p>MAIL :</p><input>Lucas@gmail.com</input></div>
+</div>
+
+
+<div class="champ_modif">   
+    <div class="formInscription">
+        <form method="POST">
+                    <input type="email" name = "email" id="email" placeholder="Ancien email" class="formInscription1">
+                    <label for="confirm_e"></label>
+                        <input type="text"  id="confirm_e" placeholder="Nouvel email" class="formInscription2">
+                <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe"  class="formInscription3">
+                </form>
+            
+            <form method="POST">
+                <label for="password_conf">
+                    <input type="password" name="confirm_password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
+                </label>
+            </form>
+            <button type="submit" class="buttonConfirm">Confirmer</button>
+        </div>
+            
+        <div class="formInscription">
+            <form method="POST">
+                <label for="password">
+                    <input type="password" id="password" placeholder="Ancien mot de passe"  class="formInscription3">
+                </label>
+            </form>
+            <form method="POST">
+                <label for="password">
+                    <input type="password" id="password" placeholder="Nouveau mot de passe"  class="formInscription3">
+                </label>
+            </form>
+            <form method="POST">
+                <label for="password">
+                    <input type="password" id="password" placeholder="Confirmer le mot de passe"  class="formInscription3">
+                </label>
+            </form>
+            <button type="submit" class="buttonConfirm">Confirmer</button>
         </div>
     </div>
+    <div class="btn" style="height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
 </div>
-    </div>
-    </div>
+<script>
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
 </div>
 </body>
 <?php 

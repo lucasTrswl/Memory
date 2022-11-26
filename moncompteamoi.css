@@ -1,7 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-
-
 body
 {
     color: white;
@@ -65,7 +61,7 @@ nav
 
 .fond
 {
-    background-image: url("Images/Background/fond_1.jpg");
+    background-image: url("img connexion.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -100,6 +96,7 @@ nav
     font-family: 'Archivo', sans-serif;
 }
 
+
 .button
 {
     text-align: center;
@@ -122,8 +119,7 @@ button
     border-radius: 5px;
 }
 
-.section1
-{
+.section1{
     background-color: #020240;
     height: 500px;
     width : 100%;
@@ -233,6 +229,7 @@ button
     padding-bottom: 30px;
     padding-top: 30px;
     margin-left: 40px;
+    
     background-color: #13138b;
     border-radius: 5px;
     margin-top: 100px;
@@ -401,7 +398,6 @@ footer{
     color: orange;
     display: inline-block;
     width: 20px;
-
 }
 
 #mail
@@ -435,6 +431,7 @@ li c
     color: white;
 }
 
+
 .orange
 {
     color: orange;
@@ -461,7 +458,7 @@ li c
     z-index: 1;
     position: absolute;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: Georgia;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -591,7 +588,35 @@ li c
     color: white;
     width: 70%;
 }
-
+.timer{
+    font-size: 50px;
+}
+.bouton{
+        position:relative;
+        width:200px;
+        color:#FFF;
+        display:block;
+        text-decoration:none;
+        margin:0 auto;
+        border-radius:5px;
+        border:solid 1px orange;
+        background:orange;
+        text-align:center;
+        padding:20px 30px;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        transition: all 0.1s;
+        -webkit-box-shadow: 0px 9px 0px orangered;
+        -moz-box-shadow: 0px 9px 0px orangered;
+        box-shadow: 0px 9px 0px orangered;
+}
+.bouton:active{
+    -webkit-box-shadow: 0px 2px 0px orangered;
+    -moz-box-shadow: 0px 2px 0px orangered;
+    box-shadow: 0px 2px 0px orangered;
+    position:relative;
+    top:7px;
+}
 .formInscription
 {
     text-align: center;
@@ -634,7 +659,7 @@ li c
 
 .buttonInscription
 {
-    margin-left: 510px;
+    margin-left: 45%;
     padding:10px;
     margin-top: 20px;
     margin-bottom: 100px;
@@ -868,323 +893,173 @@ tbody tr, td, th
     width: 30px;
     margin-right: 10px;
 }
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-  padding-bottom: 20px;
-}
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-}
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
-  
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}
 
-
-.passtrengthMeter{
-    position: relative;
-    width: 100%;
-  }
-  
-  .passtrengthMeter > input{
-    width: 100%;
-    display: inline-block;
-    padding: 5px;
-    box-sizing: border-box;
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  
-  .passtrengthMeter > input:focus {
-      outline-width: 0;
-  }
-  
-  .passtrengthMeter::after{
-    content: '';
-    height: 3px;
-    overflow: hidden;
-    width: 0%;
-    transition: width .5s;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-  }
-  
-  .passtrengthMeter.weak::after{
-    background-color: #EC644B;
+.deroule {
+    float: left;
     width: 25%;
-  }
-  
-  .passtrengthMeter.medium::after{
-    content: '';
-    background-color: #E87E04;
-    width: 50%;
-  }
-  
-  .passtrengthMeter.strong::after{
-    content: '';
-    background-color: #EFBF17;
-    width: 75%;
-  }
-  
-  .passtrengthMeter.very-strong::after{
-    content: '';
-    background-color: #42A72A;
-    width: 100%;
-  }
-  
-  .passtrengthMeter .showPassword{
-    position: absolute;
-    width: 20px;
-    top: calc(50% - 10px);
-    right: 10px;
-  }
-  
-  .passtrengthMeter .showPassword.active{
-    opacity: .5;
-  }
-  
-  .passtrengthMeter .showPassword img{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .passtrengthMeter .showPassword:hover{
-    cursor: pointer;
-  }
-  
-  .passtrengthMeter .tooltip {
-    background: #000000;
-    top: 100%;
-    color: #fff;
-    font-family:Arial;
-    font-size: 12px;
-    display: block;
-    left: 50%;
-    margin-bottom: 15px;
-    opacity: 0;
-    padding: 5px 10px;
-    pointer-events: none;
-    position: absolute;
-    min-width: 70px;
-    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: -4%;
+    margin-left: -2%;
+}
+.deroule ul {
+    list-style-type: none;
+}
+.deroule ul li {
+    float: left;
+    width: 25%;
     text-align: center;
-    z-index: 10;
-    -webkit-transform: translateY(5px);
-       -moz-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-         -o-transform: translateY(5px);
-            transform: translateY(5px);
-    -webkit-transition: all .25s ease-out;
-       -moz-transition: all .25s ease-out;
-        -ms-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-       -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-        -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-         -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  }
-  
-  .passtrengthMeter.weak .tooltip{
-    background-color: #EC644B;
-  }
-  .passtrengthMeter.weak .tooltip:after{
-    border-left: solid transparent 7px;
-    border-right: solid transparent 7px;
-    border-bottom: solid #EC644B 7px;
-    top: -7px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    width: 0;
-  }
-  
-  .passtrengthMeter.medium .tooltip{
-    background-color: #E87E04;
-  }
-  .passtrengthMeter.medium .tooltip:after{
-    border-left: solid transparent 7px;
-    border-right: solid transparent 7px;
-    border-bottom: solid #E87E04 7px;
-    top: -7px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    width: 0;
-  }
-  
-  .passtrengthMeter.strong .tooltip{
-    background-color: #EFBF17;
-  }
-  .passtrengthMeter.strong .tooltip:after{
-    border-left: solid transparent 7px;
-    border-right: solid transparent 7px;
-    border-bottom: solid #EFBF17 7px;
-    top: -7px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    width: 0;
-  }
-  
-  .passtrengthMeter.very-strong .tooltip{
-    background-color: #42A72A;
-  }
-  .passtrengthMeter.very-strong .tooltip:after{
-    border-left: solid transparent 7px;
-    border-right: solid transparent 7px;
-    border-bottom: solid #42A72A 7px;
-    top: -7px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    width: 0;
-  }
-  
-  .passtrengthMeter.weak .tooltip:before {
-    top: -20px;
-    content: " ";
+}
+.deroule ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.deroule .menu {
     display: block;
-    height: 20px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .passtrengthMeter .tooltip:after {
-    border-left: solid transparent 7px;
-    border-right: solid transparent 7px;
-    border-bottom: solid #000000 7px;
-    top: -7px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -7px;
-    position: absolute;
-    width: 0;
-    -webkit-transition: all .25s ease-out;
-       -moz-transition: all .25s ease-out;
-        -ms-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
-  
-  .passtrengthMeter:hover .tooltip {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transform: translateY(10px);
-       -moz-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-         -o-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  
-  .lte8 .passtrengthMeter .tooltip {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #e99122;
+    padding: 10px 0px;
+}
+.menu:hover { 
+    cursor: pointer;
+    color: #e99122;
+    border-bottom: 2px solid gold;
+}
+.sous {
     display: none;
-  }
-  
-  .lte8 .passtrengthMeter:hover .tooltip {
-    display: block;
-  }
-  
-  #password{
-    padding : 20px;
-  }
-  #confirm_password{
-    margin-top: 20px;
+    box-shadow: 0px 1px 2px #11102f;
+    background-color: #11102f;
+}
+.deroule > ul li:hover .sous {
+    display: flex;
+    flex-direction: column;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous .menu {
+    padding: 10px;
+    border-bottom: none;
+}
+.sous .menu:hover {
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > .menu::after {
+    content: ▼;
+    font-size: 12px;
+}
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    position: absolute;
+    background-color: #11102f;
+    width: 100%;
+    z-index: 1000%;
+}
+.deroule ul li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.posi2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.carte
+{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(40, 45, 79, 0.757);    height: 620px;
+    width: 600;
+    margin-left: 600px;
+    border: 5px solid rgb(119, 119, 201);
+    border-image-slice: 1;
+    border-radius: 65px;
+}
+
+#user{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.divprem
+{
+    display: flex;
+    justify-content: center;
+}
+
+.divdeux
+{
+    display: flex;
+    justify-content: center;
+}
+
+.divtrois
+{
+    display: flex;
+    justify-content: center;
+}
+
+.divcinq
+{
+    display: flex;
+    justify-content: center;
+}
+
+.posescores
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+}
+
+.position {
+    display: flex;
+    border: 5px solid rgb(119, 119, 201);
+    border-image-slice: 1;
+    margin-top: 50px;
+    background-color: rgba(40, 45, 79, 0.757);
+    width: 302px;
+    height: 302px;
+    border-radius: 165px;
+    margin-bottom: 35px;
+    align-content: stretch;
+}
+ 
+.position img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.posi
+{
+    display: flex;
+    justify-content: center;
+}
+.remonte {
+    position: fixed;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
   }

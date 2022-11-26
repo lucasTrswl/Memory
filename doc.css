@@ -606,3 +606,14 @@ li c
     width: 30px;
     margin-right: 10px;
 }
+.remonte {
+    position: fixed;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+  }

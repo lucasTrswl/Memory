@@ -51,7 +51,34 @@ require('./view/header.inc.php');
             <div class="diff"></div>
     </div>
 </div>
+<div class="btn" style="height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
+</div>
+<script>
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
+</div>
 <div class="menuderoule">
     <section class="deroule">
         <ul>

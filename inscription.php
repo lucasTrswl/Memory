@@ -12,7 +12,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="inscription.css">
+    <link rel = "stylesheet" href="fautsinscrire.css">
 
 
     <!-- importation font family "Anton"-->
@@ -51,32 +51,36 @@ require('./view/header.inc.php');
 
            
 <section>
+<div class="ens">
 <div class="login-page">
 <div class="form">
 <form method="POST" action="">
+
+
     <label for="email">
-        <input type="email" id="email" placeholder="Email" name="email" autocomplete="off" class="formInscription1">
+        <input type="email" class="input_white" id="email" placeholder="Email" name="email" autocomplete="off" class="formInscription1">
     </label>
 
     <label for="pseudo">
-        <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo" autocomplete="off" class="formInscription2">
+        <input type="text" class="input_white" id="pseudo" placeholder="Pseudo" name="pseudo" autocomplete="off" class="formInscription2">
     </label>
 
 
                
                
-        <input type="password" id="password" placeholder="Mot de passe" name="mdp" autocomplete="off"  class="formInscription3">
+        <input type="password" class="input_white" id="password" placeholder="Mot de passe" name="mdp" autocomplete="off"  class="formInscription3">
 
 
     <label for="password">
-        <input type="password" id="confirm_password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
+        <input type="password" class="input_white" id="confirm_password" placeholder="Confirmer le mot de passe" name="confirm_mdp"  autocomplete="off" class="formInscription3">
 
        
     </label>
-    <input type="submit" class="buttonInscription" name="inscription">
+    <input type="submit" class="input_white" class="buttonInscription" name="inscription">
     <p class="message">Registered ? <a href="connexion.php">Connect to your account</a></p>
-</form>
 
+
+</form>
 
 
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -102,6 +106,7 @@ require('./view/header.inc.php');
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  youtu.be/JRHARtLZLk8
 
 </script>
 
@@ -149,7 +154,34 @@ if(isset($_POST["inscription"])){
 ?>
 </div>
 </section>
+<div class="btn" style="height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
+</div>
+<script>
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
+</div>
 <?php 
 
  // importation footer

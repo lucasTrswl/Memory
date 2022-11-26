@@ -12,7 +12,7 @@ require('../includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="gen.css">
+    <link rel="stylesheet" href="generateurMP.css">
 
     <!-- importation font family "Anton"-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -30,7 +30,7 @@ require('../includes/database.inc.php');
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
     
-    <title>Générateur de mot de passe</title>
+    <title>Génératuer de mot de passe</title>
 
 </head>
 

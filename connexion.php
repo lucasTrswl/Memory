@@ -5,7 +5,7 @@ require('./includes/database.inc.php');
    session_start();
    $bdd=new PDO('mysql:host=localhost;dbname=MySQL1;charset=utf8;','root','root');
    $insertUser = $bdd->prepare('SELECT email, mot_de_passe FROM utilisateur WHERE email=? AND mot_de_passe=?');
-   $insertUser->execute(array());
+   $insertUser->execute(array($email,$mdp));
    if(isset($_POST['submit'])){
        $username = $_POST['username'];
        $password = $_POST['password'];
@@ -24,7 +24,7 @@ require('./includes/database.inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel = "stylesheet" href="./ok.css">
+    <link rel = "stylesheet" href="connexion.css">
 
 
     <!-- importation font family "Anton"-->
@@ -56,7 +56,7 @@ require('./includes/database.inc.php');
         <p><a href="./inscription.php" class = "connexion"> INSCRIPTION </a></p>
        
         <p><a href="./myaccount.php" class="connexion"> MON ESPACE </a></p>
-        <p class="pad1"><a href="./contact.php" class="connexion">NOUS CONTACTER</a></p>
+        <p class="pad1"><a href="../contact.php" class="connexion">NOUS CONTACTER</a></p>
     </nav>
 </header>
      
@@ -67,21 +67,50 @@ require('./includes/database.inc.php');
     </div>
 </div>
 
+<div class="ens">
 <div class="login-page">
   <div class="form">
     
     <form class="login-form" method="POST" action="login_exec.php">
-      <input type="text" placeholder="username" name="username"/>
-      <input type="password" placeholder="password" name="password"/>
-      <input type="submit" value="login" name="submit">
+      <input class="input_white" type="text" placeholder="username" name="username"/>
+      <input class="input_white" type="password" placeholder="password" name="password"/>
+      <input class="input_white" type="submit" href="moncompte.php" value="login" name="submit">
       <p class="message">Not registered? <a href="./inscription.php">Create an account</a></p>
     </form>
   </div>
 </div>
+  </div>
 
 
 
+  <div class="btn" style="height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;">
+      ▲
+</div>
+<script>
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
+</div>
 
 
  <?php 
