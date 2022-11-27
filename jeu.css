@@ -1022,163 +1022,11 @@ tbody tr, td, th
     padding-bottom: 30px;
 }
 
-.wrapper
-{
-    background: #f8f8f8;
-    width: 788px;
-    height: 740px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.cards, .card, .view
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards
-{
-    height: 700px;
-    width: 700px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.cards .card
-{
-    cursor: pointer;
-    list-style: none;
-    user-select: none;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    height: calc(100% / 5 - 10px);
-    width: calc(100% / 5 - 10px);
-}
-
-.card.shake
-{
-    animation: shake 0.35s ease-in-out;
-}
-
-@keyframes shake
-{
-    0%, 100%
-    {
-        transform: translateX(0);
-    }
-    20%
-    {
-        transform: translateX(-13px);
-    }
-    40%
-    {
-        transform: translateX(13px);
-    } 
-    60%
-    {
-        transform: translateX(-8px);
-    }
-    80%
-    {
-        transform: translateX(8px);
-    }
-}
-
-.card .view
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 7px;
-    background: #fff;
-    pointer-events: none;
-    backface-visibility: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.25s linear;
-}
-
-.card .front-view img
-{
-      width: 19px;
-}
-
-.card .back-view img
-{
-    max-width: 45px;
-}
-
-.card .back-view
-{
-    transform: rotateY(-180deg);
-}
-
-.card.flip .back-view
-{
-    transform: rotateY(0);
-}
-.card.flip .front-view
-{
-  transform: rotateY(180deg);
-}
-
-@media screen and (max-width: 700px) 
-{
-  .cards{
-    height: 350px;
-    width: 350px;
-  }
-  .card .front-view img{
-    width: 17px;
-  }
-  .card .back-view img{
-    max-width: 40px;
-  }
-}
-
-@media screen and (max-width: 530px) 
-{
-  .cards
-  {
-    height: 300px;
-    width: 300px;
-  }
-  .card .front-view img
-  {
-    width: 15px;
-  }
-  .card .back-view img
-  {
-    max-width: 35px;
-  }
-}
-
-
-
-
-
-/**
- * Faisons du beau, faisons du gracieux. 
- */
-
-/**
- * Typographies Google Maggle !
- */
  @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Ubuntu');
 
  h1 {
     font-family: 'Anton', sans-serif;
  }
- 
-
-
-
  
  .chat{
   width: 750px;
@@ -1187,9 +1035,7 @@ tbody tr, td, th
   flex-direction: column;
   text-align: left;
   margin-top : 100px;
-
- 
- }
+}
  
  header {
    text-align: center;
@@ -1259,4 +1105,30 @@ tbody tr, td, th
     margin: 10px 10px 10px 10px;
     width: 25px;
     height: 25px;
+  }
+
+  #titre
+  {
+    text-align: center;
+  }
+
+  #memory
+  {
+    background-color: black;
+    width: 880px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-gap: 20px;
+  }
+
+  img
+  {
+    width: 100%;
+  }
+  
+  span
+  {
+    height: 190px;
   }

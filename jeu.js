@@ -1,284 +1,64 @@
-console.log("test")
+var a = [1,2,3,4,5,6,1,2,3,4,5,6]
+.map (p => [p, Math,random()])
+.sort((a,b) => a[1]-b[1])
+.map(p => p[0])
 
-function ChangeText1(){
-    document.getElementById("a").innerHTML="Super Smash Bros"
+
+console. log(a);
+
+var pics = document.getElementsByTaglane ('img');
+var eltscore = document.getElementById('score');
+var score = 0;
+var step = 1;
+var pl, p2;
+var timer = null;
+
+for(let i=0; icpics.length; 1+*){
+
+
+for(let i=0; i<pics.length; i++){
+    pics[i].src2 = 'Images/Memory' + a[i] + '.png';
 }
-function ChangeText2(){
-    document.getElementById("a").innerHTML="Rocket League"
-}
-function ChangeText3(){
-    document.getElementById("a").innerHTML="Pokemon"
-}
-function ChangeText4(){
-    document.getElementById("a").innerHTML="Call Of Duty"
-}
-function ChangeText5(){
-    document.getElementById("b").innerHTML="Facile"
-}
-function ChangeText6(){
-    document.getElementById("b").innerHTML="Medium"
-}
-function ChangeText7(){
-    document.getElementById("b").innerHTML="Difficile"
-}
-function ChangeText8(){
-    document.getElementById("b").innerHTML="Impossible"
-}
-var h1 = document.getElementsByTagName('h2')[0];
-var sec = 0;
-var min = 0;
-var hrs = 0;
-var t;
-function timer(){
-function tick(){
-    sec++;
-    if (sec >= 60) {
-        sec = 0;
-        min++;
-        if (min >= 60) {
-            min = 0;
-            hrs++;
-        }
+
+document.addEventListener('click',function(e){
+    switch(step){
+case 1:
+    if (e.target.tagName-n('IMG'){
+        e.target.src = e.target.src2;
+        p2 = e.target;
+        step = 3;
     }
-}
-function add() {
-    tick();
-    h1.textContent = (hrs > 9 ? hrs : "0" + hrs) 
-             + ":" + (min > 9 ? min : "0" + min)
-                + ":" + (sec > 9 ? sec : "0" + sec);
-    timer();
-}
-function timer() {
-    t = setTimeout(add, 1000);
-}
-
-timer();
-start.onclick = timer;
-stop.onclick = function() {
-    clearTimeout(t);
-}
-}
-reset.onclick = function() {
-    h1.textContent = "00:00:00";
-    seconds = 0; minutes = 0; hours = 0;
-}
-bouton=document.getElementById("debut");
-theme=document.getElementById('a');
-diff=document.getElementById('b');
-bouton.addEventListener('click',début);
-function début(){
-    if(theme==="Pokemon"){
-        if(diff==="Facile"){
-            timer();
+    break;
+    case 2:
+        if (e. target. tagNane= " IMG'){
+            e.target.sre - e.target.src2;
+            p2 = e.target;
+            step = 3;
+        
         }
-        else if(diff==="Normal"){
-            timer();
-        }
-        else if(diff==="Difficile"){
-            timer();
-        }
-        else if(diff==="Impossible"){
-            timer();
-        }
+        timer = setTimeout (check, 1700);
+        break;
+        case 3:
+            clearTineout (timer):
+            check ();
+            break;
     }
-    else if(theme==="Super Smash Bros"){
-        if(diff==="Facile"){
-            timer();
-        }
-        else if(diff==="Normal"){
-            timer();
-        }
-        else if(diff==="Difficile"){
-            timer();
-        }
-        else if(diff==="Impossible"){
-            timer();
-        }
+}};
+
+function check(){
+    if (p1.src2==p2.src2){ 
+        p1.replaceWith( document.createElement ('span'))
+        p2.replacewith( document. createElenent ('span'))
+    } else {
+        p2.src = pl.src = 'Images//Memory/img-1.png';
     }
-    else if(theme==="Call Of Duty"){
-        if(diff==="Facile"){
-            timer();
-        }
-        else if(diff==="Normal"){
-            timer();
-        }
-        else if(diff==="Difficile"){
-            timer();
-        }
-        else if(diff==="Impossible"){
-            timer();
-        }
-    }
-    else if(theme==="Rocket League"){
-        if(diff==="Facile"){
-            timer();
-        }
-        else if(diff==="Normal"){
-            timer();
-        }
-        else if(diff==="Difficile"){
-            timer();
-        }
-        else if(diff==="Impossible"){
-            timer();
-        }
-    }
-}
-
-bouton.addEventListener('click',);
-
-const cards = document.querySelectorAll(".card"),
-timeTag = document.querySelector(".time b"),
-flipsTag = document.querySelector(".flips b"),
-refreshBtn = document.querySelector(".details button");
-
-let maxTime = 20;
-let timeLeft = maxTime;
-let flips = 0;
-let matchedCard = 0;
-let disableDeck = false;
-let isPlaying = false;
-let cardOne, cardTwo, timer;
-
-function initTimer() {
-    if(timeLeft <= 0) {
-        return clearInterval(timer);
-    }
-    timeLeft--;
-    timeTag.innerText = timeLeft;
-}
-
-function flipCard({target: clickedCard}) {
-    if(!isPlaying) {
-        isPlaying = true;
-        timer = setInterval(initTimer, 1000);
-    }
-    if(clickedCard !== cardOne && !disableDeck && timeLeft > 0) {
-        flips++;
-        flipsTag.innerText = flips;
-        clickedCard.classList.add("flip");
-        if(!cardOne) {
-            return cardOne = clickedCard;
-        }
-        cardTwo = clickedCard;
-        disableDeck = true;
-        let cardOneImg = cardOne.querySelector(".back-view img").src,
-        cardTwoImg = cardTwo.querySelector(".back-view img").src;
-        matchCards(cardOneImg, cardTwoImg);
-    }
-}
-
-function matchCards(img1, img2) {
-    if(img1 === img2) {
-        matchedCard++;
-        if(matchedCard == 6 && timeLeft > 0) {
-            return clearInterval(timer);
-        }
-        cardOne.removeEventListener("click", flipCard);
-        cardTwo.removeEventListener("click", flipCard);
-        cardOne = cardTwo = "";
-        return disableDeck = false;
-    }
-
-    setTimeout(() => {
-        cardOne.classList.add("shake");
-        cardTwo.classList.add("shake");
-    }, 400);
-
-    setTimeout(() => {
-        cardOne.classList.remove("shake", "flip");
-        cardTwo.classList.remove("shake", "flip");
-        cardOne = cardTwo = "";
-        disableDeck = false;
-    }, 1200);
-}
-
-function shuffleCard() {
-    timeLeft = maxTime;
-    flips = matchedCard = 0;
-    cardOne = cardTwo = "";
-    clearInterval(timer);
-    timeTag.innerText = timeLeft;
-    flipsTag.innerText = flips;
-    disableDeck = isPlaying = false;
-
-    let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
-    arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-
-    cards.forEach((card, index) => {
-        card.classList.remove("flip");
-        let imgTag = card.querySelector(".back-view img");
-        setTimeout(() => {
-            imgTag.src = `images/img-${arr[index]}.png`;
-        }, 500);
-        card.addEventListener("click", flipCard);
-    });
-}
-
-shuffleCard();
-
-refreshBtn.addEventListener("click", shuffleCard);
-
-cards.forEach(card) 
-    card.addEventListener("click", flipCard);
-bouton.addEventListener('click',début);
-for (var i = 0; i < bgCardsLength; i++) {
-    card = document.createElement("div");
-    card.setAttribute("class", "card");
-    card.innerHTML = "<figure class='back'></figure><figure class='front'></figure>";
-    plateau.appendChild(card);
-    //Calcul de la hauteur en fonction de la largeur - qui s'adapte en responsive
-    cardSize = $('.card').width();
-    $('.card').css('height', cardSize)
-    front = card.childNodes[1];
-    bg = "url(" + bgCards[i] + ") no-repeat";
-    front.style.background = bg;
-    card.addEventListener('click', function() {
-        addFlipped(this);
-    });
-} 
-function reset() {
-    cards = document.querySelectorAll(".card");
-    for (var u = 0; u < cards.length; u++) {
-        cards[u].classList.remove('flipped');
-    }
-    $("#menu").fadeOut("fast");
-    numberCaught = 0;
-    caughtField.innerHTML = numberCaught;
-    seconds = 0;
-}
-function shuffle(tab) {
-    for (i = tab.length; i > 0; i--) {
-        j = Math.floor(Math.random() * i);
-        x = tab[i - 1];
-        tab[i - 1] = tab[j];
-        tab[j] = x;
-    }
-}
-function addFlipped(target) {
-    if (!target.classList.contains('flipped')) {
-        target.classList.add('flipped');
-        flippedCards.push(target);
-        if (flippedCards.length > 1) {
-            removeFlipped();
-        }
-    }
-}
-function removeFlipped() {
-    if (flippedCards.length > 2) {
-        flippedCards[0].classList.remove('flipped');
-        flippedCards.shift();
-    }
-    checkResult();
-}
-function checkResult() {
-    if (flippedCards[0].innerHTML == flippedCards[1].innerHTML) {
-        numberCaught++;
-        caughtField.innerHTML = numberCaught;
-        flippedCards = [];
-        if (numberCaught == bgCardsLength / 2) {
-            $("#menu").fadeIn("fast");
-            timeField.innerHTML = seconds;
-        }
-    }
-}
+    
+    step - 1;
+    
+    fin du jeu
+    
+    1f (document.getelenentsByClassNan
+    
+    score. textContent
+    
+    •Gagné

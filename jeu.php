@@ -108,220 +108,40 @@ btn.addEventListener('click', () => {
     </section>
 </div>
 
-<div class="contenu">
-    <div class="wrapper">
-      <ul class="cards">
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-          <div class="view back-view">
-          <img src="images/Memory/que_icon.svg" alt="icon">
-          </div>
-        </li>
-      </ul>
-    </div>
+<h1 id="titre">MEMORY</h1>
+<div id="memory">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
+  <img src="images/Memory/pointdintero.jpeg" id="test">
 </div>
 
+<script src="game.js"></script>
 <script src="jeu.js"></script>
-
-
 
 <section class="chat">
     <div class="messages">
-
 </div>
 </section>
     <div class="user-inputs">
@@ -335,18 +155,7 @@ btn.addEventListener('click', () => {
   <script src="app.js"></script>
 
 <?php
-
-
-//importation chat sur la page de jeu
-
- // importation footer
  require('./view/footer.inc.php');
-
  ?>
-
-
-
-     
-   
 </body>
 </html>
