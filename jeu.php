@@ -137,7 +137,6 @@ btn.addEventListener('click', () => {
   <img src="images/Memory/pointdintero.jpeg" id="test">
 </div>
 
-<script src="game.js"></script>
 <script src="jeu.js"></script>
 
 <section class="chat">

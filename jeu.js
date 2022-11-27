@@ -10,7 +10,7 @@ var pics = document.getElementsByTagName ('img');
 var eltscore = document.getElementById('score');
 var score = 0;
 var step = 1;
-var pl, p2;
+var p1, p2;
 var timer = null;
 
 for(let i=0; i<pics.length; i++){
@@ -45,8 +45,9 @@ function check(){
     if (p1.src2==p2.src2){ 
         p1.replaceWith( document.createElement ('span'))
         p2.replacewith( document. createElenent ('span'))
+        score += 50;
     } else {
-        p2.src = pl.src = 'Images//Memory/img-1.png';
+        p2.src = p1.src = 'Images//Memory/img-1.png';
     }
     step = 1;
     if (document.getElementsByClassName('img').length==0){
