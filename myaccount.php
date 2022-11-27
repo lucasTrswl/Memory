@@ -60,11 +60,11 @@ require('./view/header.inc.php');
 </div>
     <p><i id="user" class="fa-solid fa-user"></i></p>
 <div class="carte">
-    <div class="prem"><p>NOM :</p><input>TURSCHWELL</input></div>
-    <div class="dieux"> <p>PRENOM :</p><input>LUCAS</input></div>
-    <div class="trois"><p>PSEUDO :</p><input>TAEVOR</input></div>
-    <div class="quatre"><p>TEL :</p><input>07.45.67.98.24</input></div>
-    <div class="cinq"><p>MAIL :</p><input>Lucas@gmail.com</input></div>
+    <div class="prem"><p>NOM  : TURSCHWELL</div>
+    <div class="dieux"> <p>PRENOM  :  LUCAS</div>
+    <div class="trois"><p>PSEUDO  :  TAEVOR</div>
+    <div class="quatre"><p>TEL  :  07.45.67.98.24</div>
+    <div class="cinq"><p>MAIL  :  Lucas@gmail.com</div>
 </div>
 
 
