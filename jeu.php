@@ -87,7 +87,7 @@ btn.addEventListener('click', () => {
                     <li><a class="menu" onclick="ChangeText1()">Super Smash Bros</a></li>
                     <li><a class="menu" onclick="ChangeText2()">Rocket League</a></li>
                     <li><a class="menu" onclick="ChangeText3()">Pokemon</a></li>
-                    <li><a class="menu" onclick="ChangeText4()">Call Of Duty</a></li>
+                    <li><a class="menu" onclick="ChangeText4()">Diamant</a></li>
                 </ul>
             </li>
         </ul>
@@ -138,6 +138,7 @@ btn.addEventListener('click', () => {
 </div>
 
 <script src="jeu.js"></script>
+<script src="game.js"></script>
 
 <section class="chat">
     <div class="messages">

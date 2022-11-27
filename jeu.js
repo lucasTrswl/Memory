@@ -1,4 +1,4 @@
-var a = [1,2,3,4,5,6,1,2,3,4,5,6]
+var a = [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
 .map (p => [p, Math.random()])
 .sort((a,b) => a[1]-b[1])
 .map(p => p[0])
@@ -14,7 +14,7 @@ var p1, p2;
 var timer = null;
 
 for(let i=0; i<pics.length; i++){
-    pics[i].src2 = 'Images/Memory' + a[i] + '.png';
+    pics[i].src2 = './Images/Memory/img-' + a[i] + '.png';
 }
 
 document.addEventListener('click',function(e){

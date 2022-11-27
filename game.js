@@ -10,7 +10,7 @@ function ChangeText3(){
     document.getElementById("a").innerHTML="Pokemon"
 }
 function ChangeText4(){
-    document.getElementById("a").innerHTML="Call Of Duty"
+    document.getElementById("a").innerHTML="Diamant"
 }
 function ChangeText5(){
     document.getElementById("b").innerHTML="Facile"
@@ -95,7 +95,7 @@ function début(){
             timer();
         }
     }
-    else if(theme==="Call Of Duty"){
+    else if(theme==="Diamant"){
         if(diff==="Facile"){
             timer();
         }
